@@ -1,0 +1,726 @@
+
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El Obrero · Parrilla y bodegón en La Boca</title>
+<meta name="description" content="A pocas cuadras de la Bombonera, en Caffarena 64: parrilla tradicional porteña, ojo de bife y asado de tira a precios de barrio.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="El Obrero · Vista previa de sitio web">
+<meta property="og:description" content="A pocas cuadras de la Bombonera, en Caffarena 64: parrilla tradicional porteña, ojo de bife y asado de tira a precios de barrio.">
+<meta property="og:url" content="https://webbyoctavio.github.io/muestras/el-obrero/">
+<meta property="og:image" content="https://webbyoctavio.github.io/muestras/img/og/el-obrero.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://webbyoctavio.github.io/muestras/el-obrero/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+<style>
+/* ===== Base: layout, type, components (shared by all demos) ===== */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:auto}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{margin:0;font-weight:400;line-height:1.02;text-wrap:balance}
+p{margin:0}
+::selection{background:var(--accent);color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.sec{padding-block:clamp(72px,10vw,136px);position:relative}
+[id]{scroll-margin-top:84px}
+.eyebrow{font-family:var(--label,var(--body));text-transform:uppercase;letter-spacing:.16em;font-size:12.5px;font-weight:700;color:var(--accent-2,var(--accent));display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:1.5px;background:currentColor;display:inline-block}
+.h2{font-family:var(--display);font-size:clamp(38px,5.6vw,72px);letter-spacing:var(--display-track,-.01em);line-height:1}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:56ch}
+.muted{color:var(--muted)}
+.hand{font-family:var(--hand,var(--display))}
+
+/* demo bar */
+.demo-bar{position:relative;z-index:60;background:var(--demo-bg,#111);color:var(--demo-ink,#f2f2f2);font-size:12.5px;line-height:1.35;padding:8px 0}
+.demo-bar .wrap{display:flex;gap:10px;align-items:center;justify-content:space-between}
+.demo-bar b{font-weight:700}
+.demo-bar .dot{width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block;margin-right:8px;box-shadow:0 0 0 3px rgba(74,222,128,.22)}
+.demo-bar button{background:none;border:0;cursor:pointer;opacity:.75;padding:4px 6px;min-height:28px;font-size:13px}
+.demo-bar button:hover{opacity:1}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;transition:background .35s,box-shadow .35s,backdrop-filter .35s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:70px}
+.nav.scrolled{background:var(--nav-bg,color-mix(in srgb,var(--bg) 86%,transparent));backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);box-shadow:0 1px 0 var(--line)}
+.logo{font-family:var(--display);font-size:26px;text-decoration:none;letter-spacing:var(--logo-track,0);line-height:1;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.logo small{display:block;font-family:var(--body);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;opacity:.7;margin-top:4px}
+.nav-links{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:600}
+.nav-links a{text-decoration:none;opacity:.86;position:relative;padding:6px 0}
+.nav-links a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .35s cubic-bezier(.7,0,.2,1)}
+.nav-links a:not(.btn):hover{opacity:1}
+.nav-links a:not(.btn):hover::after{transform:scaleX(1);transform-origin:left}
+.burger-btn{display:none;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--line);background:transparent;cursor:pointer;position:relative}
+.burger-btn span{position:absolute;left:13px;right:13px;height:2px;background:currentColor;transition:transform .35s,opacity .2s}
+.burger-btn span:nth-child(1){top:17px}.burger-btn span:nth-child(2){top:22px}.burger-btn span:nth-child(3){top:27px}
+.menu-open .burger-btn span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.menu-open .burger-btn span:nth-child(2){opacity:0}
+.menu-open .burger-btn span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+.mobile-menu{position:fixed;inset:0;z-index:45;background:var(--bg);display:flex;flex-direction:column;justify-content:center;gap:6px;padding:90px max(28px,env(safe-area-inset-left,0px)) 40px;opacity:0;pointer-events:none;transition:opacity .35s}
+.mobile-menu a{font-family:var(--display);font-size:clamp(38px,10vw,56px);text-decoration:none;line-height:1.15;transform:translateY(24px);opacity:0;transition:transform .5s cubic-bezier(.2,.8,.2,1),opacity .4s}
+.menu-open .mobile-menu{opacity:1;pointer-events:auto}
+.menu-open .mobile-menu a{transform:none;opacity:1}
+.menu-open .mobile-menu a:nth-child(2){transition-delay:.05s}.menu-open .mobile-menu a:nth-child(3){transition-delay:.1s}.menu-open .mobile-menu a:nth-child(4){transition-delay:.15s}.menu-open .mobile-menu a:nth-child(5){transition-delay:.2s}
+.mobile-menu .mm-info{margin-top:28px;font-size:15px;color:var(--muted)}
+@media (max-width:860px){.nav-links{display:none}.burger-btn{display:block}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:var(--btn-radius,999px);font-weight:700;font-size:15.5px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .25s cubic-bezier(.2,.8,.2,1),background .25s,color .25s,box-shadow .25s;will-change:transform;white-space:nowrap;flex-shrink:0}
+.btn-primary{background:var(--accent);color:var(--accent-ink);box-shadow:0 10px 30px -12px var(--accent)}
+.btn-primary:hover{box-shadow:0 16px 36px -12px var(--accent)}
+.btn-ghost{border-color:currentColor;background:transparent}
+.btn-ghost:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-sm{min-height:42px;padding:0 18px;font-size:14px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+
+/* live status chip */
+.status{display:inline-flex;align-items:center;gap:9px;font-size:13.5px;font-weight:600;padding:7px 14px 7px 12px;border-radius:999px;background:var(--chip-bg,rgba(127,127,127,.14));border:1px solid var(--line)}
+.status i{width:8px;height:8px;border-radius:50%;background:#9ca3af;position:relative}
+.status.open i{background:#22c55e}
+.status.open i::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid #22c55e;opacity:.6;animation:ping 1.8s cubic-bezier(0,0,.2,1) infinite}
+.status.closed i{background:#ef4444}
+@keyframes ping{75%,100%{transform:scale(2.2);opacity:0}}
+
+/* marquee */
+.mq{overflow:hidden;white-space:nowrap;position:relative}
+.mq-track{display:inline-flex;gap:var(--mq-gap,44px);padding-right:var(--mq-gap,44px);animation:mq var(--mq-speed,38s) linear infinite}
+.mq-rev .mq-track{animation-direction:reverse}
+.mq:hover .mq-track{animation-play-state:paused}
+.mq-item{display:inline-flex;align-items:center;gap:var(--mq-gap,44px)}
+.mq-item::after{content:var(--mq-sep,"✦");font-size:.6em;opacity:.7}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* reveal */
+.pre{opacity:0;transform:translateY(38px)}
+.pre[data-r="fade"]{transform:none}
+.pre[data-r="left"]{transform:translateX(-46px)}
+.pre[data-r="right"]{transform:translateX(46px)}
+.pre[data-r="scale"]{transform:scale(.92)}
+.pre[data-r="clip"]{opacity:1;transform:none;clip-path:inset(100% 0 0 0)}
+.pre.in{opacity:1;transform:none;clip-path:inset(0 0 0 0);transition:opacity 1s cubic-bezier(.2,.8,.2,1),transform 1.1s cubic-bezier(.2,.8,.2,1),clip-path 1.2s cubic-bezier(.7,0,.2,1);transition-delay:var(--d,0s)}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding:.14em .02em .08em;margin:-.14em -.02em -.08em}
+.w>span{display:inline-block;transform:translateY(108%);animation:rise 1s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i)*65ms + var(--d0,.12s))}
+@keyframes rise{to{transform:none}}
+.fade-in{animation:fadeUp 1s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--d,.5s)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+
+/* about */
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,6vw,90px);align-items:center}
+.about .txt{display:flex;flex-direction:column;gap:22px;min-width:0}
+.about-media{position:relative}
+.about-media .ph{aspect-ratio:4/5;border-radius:var(--img-radius,18px);overflow:hidden;position:relative}
+.about-media .ph img{width:100%;height:118%;object-fit:cover;position:absolute;top:-9%}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:8px}
+.fact{border-top:1.5px solid var(--line);padding-top:14px}
+.fact b{display:block;font-family:var(--display);font-size:clamp(26px,3vw,36px);line-height:1.05;color:var(--ink)}
+.fact span{font-size:13.5px;color:var(--muted)}
+@media (max-width:860px){.about{grid-template-columns:1fr}.about-media{order:-1}.about-media .ph{aspect-ratio:4/3}}
+@media (max-width:480px){.facts{grid-template-columns:1fr 1fr}.fact:last-child{grid-column:1/-1}}
+
+/* highlights */
+.hl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:clamp(30px,4vw,52px)}
+.hl-grid{display:grid;grid-template-columns:repeat(var(--hl-cols,3),minmax(0,1fr));gap:clamp(16px,2vw,26px)}
+.card{position:relative;border-radius:var(--card-radius,20px);overflow:hidden;background:var(--surface);border:1px solid var(--line);transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;transform-style:preserve-3d}
+.card:hover{box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
+.card .ph{aspect-ratio:4/3.3;overflow:hidden;position:relative;background:var(--surface-2,var(--surface))}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.card .ph img.cut{object-fit:contain;padding:8%}
+.card:hover .ph img{transform:scale(1.07)}
+.card .body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px}
+.card h3{font-family:var(--display);font-size:clamp(23px,2.2vw,28px);line-height:1.08}
+.card p{font-size:15px;color:var(--muted)}
+.card .tag{position:absolute;top:14px;left:14px;z-index:2;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
+@media (max-width:900px){.hl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.hl-grid{grid-template-columns:1fr}}
+
+/* menu */
+.menu-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,80px);align-items:start}
+.menu-side{position:sticky;top:110px;display:flex;flex-direction:column;gap:20px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tab{border:1.5px solid var(--line);background:transparent;padding:0 16px;min-height:44px;border-radius:999px;font-weight:700;font-size:14px;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.panel{display:block}
+.tabs-ready .panel{display:none}
+.tabs-ready .panel.on{display:block;animation:fadeUp .6s cubic-bezier(.2,.8,.2,1)}
+.panel h3{font-family:var(--display);font-size:30px;margin:0 0 10px}
+.tabs-ready .panel h3{display:none}
+.item{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:18px 0;border-bottom:1px dashed var(--line)}
+.item:first-of-type{padding-top:6px}
+.item h4{font-family:var(--item-font,var(--body));font-weight:700;font-size:18px;line-height:1.3}
+.item p{grid-column:1/-1;font-size:15px;color:var(--muted);max-width:60ch}
+.item .pr{font-size:13px;font-weight:700;color:var(--accent-2,var(--accent));white-space:nowrap;align-self:center}
+.menu-note{font-size:13.5px;color:var(--muted);margin-top:18px}
+@media (max-width:860px){.menu-wrap{grid-template-columns:1fr}.menu-side{position:static}}
+
+/* gallery */
+.gal-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.gal-ctrl{display:flex;gap:10px}
+.gal-ctrl button{width:50px;height:50px;border-radius:50%;border:1.5px solid var(--line);background:transparent;cursor:pointer;display:grid;place-items:center;transition:background .25s,color .25s}
+.gal-ctrl button:hover{background:var(--ink);color:var(--bg)}
+.gal-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px max(20px,env(safe-area-inset-left,0px)) 6px;cursor:grab;-webkit-overflow-scrolling:touch}
+.gal-track::-webkit-scrollbar{display:none}
+.gal-track.drag{cursor:grabbing;scroll-snap-type:none}
+.gal-item{flex:0 0 auto;width:clamp(240px,34vw,420px);aspect-ratio:4/5;border-radius:var(--img-radius,18px);overflow:hidden;scroll-snap-align:center;position:relative;background:var(--surface)}
+.gal-item:nth-child(3n+2){aspect-ratio:1/1;align-self:center}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1);pointer-events:none;user-select:none}
+.gal-item:hover img{transform:scale(1.05)}
+.gal-bar{height:2px;background:var(--line);margin-top:22px;position:relative;overflow:hidden;border-radius:2px}
+.gal-bar i{position:absolute;inset:0 auto 0 0;width:20%;background:var(--accent);transition:width .2s}
+.gal-note{font-size:12.5px;color:var(--muted);margin-top:12px}
+
+/* reviews */
+.rev{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,5vw,70px);align-items:center}
+.rev-num{font-family:var(--display);font-size:clamp(96px,16vw,190px);line-height:.85;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.stars{position:relative;display:inline-block;font-size:30px;letter-spacing:4px;line-height:1;color:var(--line-strong,rgba(127,127,127,.35))}
+.stars::before{content:"★★★★★"}
+.stars i{position:absolute;inset:0 auto 0 0;overflow:hidden;white-space:nowrap;color:var(--star,#f5b301);width:0;transition:width 1.6s cubic-bezier(.2,.8,.2,1) .2s}
+.stars i::before{content:"★★★★★"}
+.rev-txt{display:flex;flex-direction:column;gap:14px}
+@media (max-width:700px){.rev{grid-template-columns:1fr}}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:stretch}
+.visit-info{display:flex;flex-direction:column;gap:26px;min-width:0}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:11px 0;border-bottom:1px solid var(--line);font-size:16px;vertical-align:top}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{color:var(--ink);font-weight:700}
+.hours tr.today td:first-child::after{content:"Hoy";margin-left:10px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:var(--accent);color:var(--accent-ink);padding:3px 8px;border-radius:999px;vertical-align:2px}
+.addr{font-family:var(--display);font-size:clamp(28px,3.4vw,42px);line-height:1.05}
+.copy-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.map{position:relative;border-radius:var(--img-radius,22px);overflow:hidden;min-height:380px;background:var(--map-bg,var(--surface));border:1px solid var(--line)}
+.map>svg{position:absolute;inset:0;width:100%;height:100%}
+.map .pin{position:absolute;left:50%;top:48%;transform:translate(-50%,-100%);display:flex;flex-direction:column;align-items:center;gap:6px}
+.map .pin b{background:var(--ink);color:var(--bg);font-size:13px;padding:7px 12px;border-radius:10px;white-space:nowrap;box-shadow:0 10px 24px -10px rgba(0,0,0,.5)}
+.map .pin i{width:22px;height:22px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--accent);box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 25%,transparent);animation:bob 2.4s ease-in-out infinite}
+.map .pulse{position:absolute;left:50%;top:48%;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;border:2px solid var(--accent);animation:pulse 2.4s ease-out infinite}
+.map .map-cta{position:absolute;left:16px;right:16px;bottom:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:var(--bg);border-radius:14px;padding:12px 14px;box-shadow:0 14px 40px -20px rgba(0,0,0,.5)}
+.map .map-cta span{font-size:13.5px;color:var(--muted)}
+@keyframes bob{0%,100%{transform:rotate(-45deg) translate(0,0)}50%{transform:rotate(-45deg) translate(3px,-3px)}}
+@keyframes pulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(5);opacity:0}}
+@media (max-width:860px){.visit{grid-template-columns:1fr}.map{min-height:320px}}
+
+/* cta band + footer */
+.cta-band{text-align:center;display:flex;flex-direction:column;align-items:center;gap:24px}
+.cta-band .big{font-family:var(--display);font-size:clamp(46px,9vw,128px);line-height:.95;letter-spacing:var(--display-track,-.01em)}
+.foot{padding-block:44px 34px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between;align-items:flex-start}
+.foot .flogo{font-family:var(--display);font-size:30px;color:var(--ink);line-height:1}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--ink)}
+.foot .demo-note{flex-basis:100%;font-size:12.5px;opacity:.8;padding-top:18px;border-top:1px dashed var(--line)}
+
+/* floating action */
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:40;display:none;align-items:center;gap:10px;min-height:54px;padding:0 20px 0 16px;border-radius:999px;background:var(--fab-bg,#1faa59);color:#fff;font-weight:700;text-decoration:none;box-shadow:0 14px 34px -12px rgba(0,0,0,.55);transform:translateY(120px);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.fab svg{width:22px;height:22px}
+.fab.show{transform:none}
+@media (max-width:860px){.fab{display:inline-flex}}
+
+/* toast */
+.toast{visibility:hidden;position:fixed;left:50%;bottom:max(24px,env(safe-area-inset-bottom,0px));transform:translate(-50%,140px);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:12px;font-size:14px;font-weight:600;z-index:70;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.toast.on{visibility:visible;transform:translate(-50%,0)}
+
+/* 29 banner */
+.nq{display:none;align-items:center;gap:10px;font-size:14px;font-weight:600;padding:10px 16px;border-radius:12px;background:var(--surface);border:1px dashed var(--accent);width:fit-content;max-width:100%}
+.nq.on{display:inline-flex}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .w>span{transform:none}
+  .pre{opacity:1;transform:none;clip-path:none}
+}
+
+img[src*="bife-plato"]{object-position:18% 55%}
+
+
+.hero{position:relative}
+.h2 em,.cta-band .big em{color:var(--accent-2,var(--accent))}
+.h2 .hand,.cta-band .big .hand{font-family:var(--hand);color:var(--accent);font-size:1.12em;line-height:.8;font-weight:700}
+.ph-svg{display:grid;place-items:center;background:radial-gradient(circle at 50% 62%,color-mix(in srgb,var(--accent) 16%,var(--surface-2,var(--surface))),var(--surface-2,var(--surface)) 70%)}
+.ph-svg svg{width:64%;height:auto;transition:transform .8s cubic-bezier(.2,1.4,.4,1);overflow:visible}
+.card:hover .ph-svg svg{transform:rotate(-8deg) scale(1.06)}
+.gal-item img.cut{object-fit:contain;padding:9%;background:var(--surface-2,var(--surface))}
+.logo-long{font-size:20px}
+.hero .lead{color:var(--muted)}
+.mq-band{background:var(--ink);color:var(--bg);padding:16px 0;font-family:var(--display);font-size:clamp(24px,3.4vw,40px);--mq-speed:42s}
+.sec-rev{background:var(--surface-2,var(--surface))}
+.h3x{font-size:clamp(18px,1.8vw,22px)}
+.h3x b{font-family:var(--display);font-weight:400;font-size:1.2em}
+.x-head{display:flex;flex-direction:column;gap:16px;margin-bottom:clamp(30px,4vw,50px);max-width:780px}
+.x-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:18px}
+.x-item{background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius,20px);padding:24px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden;min-width:0}
+.x-item h3{font-family:var(--display);font-size:clamp(24px,2.4vw,30px);line-height:1.05}
+.x-item p{color:var(--muted);font-size:15.5px}
+.x-body{display:flex;flex-direction:column;gap:8px}
+.x-n{font-family:var(--display);font-size:68px;line-height:.8;color:var(--accent)}
+.x-ph{aspect-ratio:16/10;border-radius:14px;overflow:hidden;margin:-8px -8px 6px;background:var(--surface-2,var(--surface))}
+.x-ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.x-ph img.cut{object-fit:contain;padding:6%}
+.x-item:hover .x-ph img{transform:scale(1.06)}
+.x-meta{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-2,var(--accent))}
+.x-glossary .x-grid{grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:0 40px}
+.x-glossary .x-item{background:transparent;border:0;border-top:1.5px solid var(--line);border-radius:0;padding:22px 0}
+.chip{min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid var(--line);background:transparent;font-weight:700;font-size:14.5px;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.chip.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.about-badge{position:absolute;left:-14px;bottom:-14px;background:var(--accent);color:var(--accent-ink);font-family:var(--hand,var(--display));font-size:26px;line-height:1.05;padding:14px 18px;border-radius:14px;transform:rotate(-4deg);box-shadow:0 16px 30px -16px rgba(0,0,0,.45);max-width:210px}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{50%{translate:0 -12px}}
+@keyframes popin{from{opacity:0;scale:.3}to{opacity:1;scale:1}}
+@keyframes draw{to{stroke-dashoffset:0}}
+/* horno */
+.horno-line{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.horno-item{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:16px 16px 22px;display:flex;flex-direction:column;gap:10px;transition:box-shadow .4s,transform .4s}
+.horno-item .x-ph{margin:0 0 6px;aspect-ratio:4/3}
+.horno-item h3{font-family:var(--display);font-size:28px;line-height:1.05}
+.horno-when{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-2,var(--accent))}
+.now-chip{display:none;background:var(--accent);color:var(--accent-ink);padding:4px 10px;border-radius:999px;font-size:11px;letter-spacing:.1em}
+.horno-item.now{box-shadow:0 0 0 2px var(--accent),0 30px 50px -30px rgba(0,0,0,.4);transform:translateY(-6px)}
+.horno-item.now .now-chip{display:inline-block}
+.encargo{display:grid;grid-template-columns:.95fr 1.05fr;align-items:center;margin-top:42px;background:var(--surface);border:1px solid var(--line);border-radius:26px;overflow:hidden}
+.encargo-ph{aspect-ratio:4/3;height:100%}
+.encargo-ph img{width:100%;height:100%;object-fit:cover}
+.encargo-txt{padding:clamp(22px,3vw,40px);display:flex;flex-direction:column;gap:14px}
+@media (max-width:860px){.horno-line{grid-template-columns:1fr}.encargo{grid-template-columns:1fr}}
+/* helado sabores */
+.flav-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.flavs{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+.flavs li{display:inline-flex;align-items:center;gap:10px;padding:10px 16px 10px 10px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-weight:700;font-size:15px;animation:popin .4s cubic-bezier(.2,1.4,.4,1) both}
+.flavs li i{width:24px;height:24px;border-radius:50%;background:var(--c);box-shadow:inset 0 -4px 0 rgba(0,0,0,.12),inset 0 3px 0 rgba(255,255,255,.35)}
+/* armá tu plato */
+.arma-box{display:grid;grid-template-columns:1fr 1fr;gap:26px;background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:clamp(20px,3vw,38px)}
+.arma-lab{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.arma-out{grid-column:1/-1;border-top:1px dashed var(--line);padding-top:22px;display:flex;flex-direction:column;gap:8px}
+.arma-dish{font-family:var(--display);font-style:italic;font-size:clamp(34px,4.4vw,58px);line-height:1;color:var(--accent)}
+@media (max-width:700px){.arma-box{grid-template-columns:1fr}}
+/* empanadas grid */
+.emp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(200px,100%),1fr));gap:16px}
+.emp-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:22px 18px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px}
+.emp-card svg{width:128px;height:86px;transition:transform .6s cubic-bezier(.2,1.4,.4,1)}
+.emp-card:hover svg{transform:translateY(-8px) rotate(-8deg)}
+.emp-card h3{font-family:var(--display);font-size:24px;line-height:1.1}
+.emp-card p{font-size:14.5px;color:var(--muted)}
+/* cortes */
+.cortes{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.cortes-list{display:flex;flex-direction:column;gap:10px}
+.corte{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;text-align:left;padding:16px 20px;border:1px solid var(--line);border-radius:14px;background:transparent;cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.corte b{font-family:var(--display);font-weight:400;font-size:clamp(26px,3vw,34px);line-height:1;text-transform:uppercase;letter-spacing:.02em}
+.corte span{font-size:13px;opacity:.75;text-align:right}
+.corte[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.corte-card{position:sticky;top:100px;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,3vw,34px);display:flex;flex-direction:column;gap:16px}
+.corte-info{display:none}
+.corte-info.on{display:block;animation:fadeUp .5s cubic-bezier(.2,.8,.2,1)}
+.corte-name{font-family:var(--display);font-size:clamp(50px,6vw,84px);text-transform:uppercase;line-height:.9;margin-bottom:10px}
+.punto{border-top:1px dashed var(--line);padding-top:18px;display:flex;flex-direction:column;gap:14px}
+.punto-q{font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-2,var(--accent))}
+.steak{height:120px;border-radius:58px 74px 52px 66px/54px 62px 50px 60px;background:repeating-linear-gradient(118deg,#2a1006 0 7px,#55230f 7px 26px);position:relative;box-shadow:0 18px 30px -18px rgba(0,0,0,.7)}
+.steak i{position:absolute;inset:12px 16px;border-radius:inherit;background:var(--c,#d6656e);box-shadow:inset 0 0 0 5px #7b4a35,inset 0 0 26px 12px rgba(110,45,20,.8);transition:background-color .7s}
+.steak i::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.18) 31%,transparent 34%),linear-gradient(80deg,transparent 62%,rgba(255,235,225,.22) 63%,transparent 66%)}
+.steak[data-p="0"]{--c:#c2273a}.steak[data-p="1"]{--c:#d9727a}.steak[data-p="2"]{--c:#8f5d47}
+.punto-btns{display:flex;flex-wrap:wrap;gap:8px}
+.punto-btns button{min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);background:transparent;cursor:pointer;font-weight:700}
+.punto-btns button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+@media (max-width:860px){.cortes{grid-template-columns:1fr}.corte-card{position:static}}
+.hand{font-family:var(--hand,var(--display))}
+.t-brasa{--bg:#0f0d0c;--surface:#1a1614;--surface-2:#151210;--ink:#f4ebe1;--muted:#b9aa9a;--line:rgba(244,235,225,.14);--accent:#ff6a2b;--accent-ink:#190c05;--accent-2:#ffb066;--display:'League Gothic','Arial Narrow',Impact,sans-serif;--body:'Manrope',system-ui,sans-serif;--display-track:.01em;--demo-bg:#000;--chip-bg:rgba(255,255,255,.08);--map-bg:#17130f;--nav-bg:rgba(15,13,12,.82);--card-radius:16px;--img-radius:14px;color-scheme:dark}
+.v-rojo{--accent:#e8452c;--accent-2:#ff9b6b}.v-rojo2{--accent:#d63a2c;--accent-2:#f5a35d}.v-oro{--accent:#f2a541;--accent-2:#ffd08a}.v-oro2{--accent:#e3b04b;--accent-2:#f7d389}.v-cobre{--accent:#df7a43;--accent-2:#f3b383}.v-negro{--accent:#ff7a3d;--accent-2:#e9d8c5}
+.t-brasa .nav{margin-bottom:-70px}
+.t-brasa .h2,.t-brasa .cta-band .big{text-transform:uppercase;font-size:clamp(50px,7.4vw,104px);line-height:.9}
+.t-brasa .card h3,.t-brasa .x-item h3{text-transform:uppercase;font-size:clamp(28px,2.6vw,36px)}
+.t-brasa .item h4{font-family:var(--display);font-weight:400;font-size:26px;text-transform:uppercase;letter-spacing:.02em;line-height:1.1}
+.hb{min-height:min(900px,100svh);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;color:#fff}
+.hb-bg{position:absolute;inset:0}
+.hb-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.14);animation:kb 16s cubic-bezier(.2,.6,.2,1) forwards;filter:saturate(1.1) contrast(1.05)}
+@keyframes kb{to{transform:scale(1.02)}}
+.embers{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.hb-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,13,12,.7) 0%,rgba(15,13,12,.2) 30%,rgba(15,13,12,.55) 62%,var(--bg) 100%),radial-gradient(ellipse 80% 60% at 50% 115%,color-mix(in srgb,var(--accent) 40%,transparent),transparent 70%)}
+.hb-in{position:relative;z-index:2;padding-top:150px;padding-bottom:36px;display:flex;flex-direction:column;gap:22px}
+.hb-kick{display:inline-flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:12.5px;color:var(--accent-2)}
+.hb-kick svg{width:18px;height:18px;color:var(--accent);filter:drop-shadow(0 0 8px var(--accent))}
+.hb-title{font-family:var(--display);font-size:clamp(84px,16vw,230px);line-height:.82;text-transform:uppercase;max-width:11ch;text-shadow:0 10px 40px rgba(0,0,0,.35)}
+.hb-title em{font-style:normal;color:transparent;-webkit-text-stroke:2px var(--accent-2);text-shadow:none}
+.hb-row{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end}
+.hb-sub{max-width:44ch;font-size:clamp(17px,1.7vw,20px);color:#eadccd}
+.hb-act{display:flex;flex-direction:column;gap:14px;align-items:flex-end}
+.hb-mq{position:relative;z-index:2;border-top:1px solid var(--line);padding:16px 0 18px;font-family:var(--display);font-size:clamp(30px,4.2vw,50px);text-transform:uppercase;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.55);--mq-speed:34s;--mq-sep:"●"}
+.hb-mq .mq-item::after{color:var(--accent);-webkit-text-stroke:0;font-size:.35em}
+@media (max-width:820px){.hb-row{grid-template-columns:1fr}.hb-act{align-items:flex-start}.hb-in{padding-top:130px}}
+</style>
+</head>
+<body class="t-brasa v-rojo">
+<div class="demo-bar"><div class="wrap"><p><span class="dot"></span><b>Vista previa</b> · Diseño de muestra para El Obrero. Fotos de stock y carta de ejemplo.</p><button type="button" aria-label="Cerrar aviso">✕</button></div></div>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#top" data-go="top"><span class="">El Obrero</span></a>
+  <nav class="nav-links" aria-label="Secciones">
+    <a href="#nosotros" data-go="nosotros">Nosotros</a>
+    <a href="#carta" data-go="carta">La carta</a>
+    <a href="#parrilla" data-go="parrilla">La parrilla</a>
+    <a href="#visitanos" data-go="visitanos">Visitanos</a>
+    <a class="btn btn-primary btn-sm" href="tel:+541143629912"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>Reservá tu mesa</a>
+  </nav>
+  <button class="burger-btn" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+</div></header>
+<div class="mobile-menu" id="mm">
+  <a href="#nosotros" data-go="nosotros">Nosotros</a>
+  <a href="#carta" data-go="carta">La carta</a>
+  <a href="#parrilla" data-go="parrilla">La parrilla</a>
+  <a href="#visitanos" data-go="visitanos">Visitanos</a>
+  <p class="mm-info">Agustín R. Caffarena 64 · La Boca<br>11 4362-9912</p>
+</div>
+
+<main id="top">
+
+<section class="hero hb">
+  <div class="hb-bg"><img src="../img/platos-servidos.webp" alt="" width="1800" height="789" decoding="async"></div>
+  <canvas class="embers" aria-hidden="true"></canvas>
+  <div class="hb-shade" aria-hidden="true"></div>
+  <div class="wrap hb-in">
+    <p class="hb-kick fade-in" style="--d:.05s"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c1 3.5 5 6 5 11a5 5 0 0 1-10 0c0-2.2 1-3.7 2.2-5 .2 1.6.9 2.7 2 3.3C11 8.7 11 5 12 2Z"/></svg><span>Parrilla y bodegón · La Boca</span></p>
+    <h1 class="hb-title" data-split>Un clásico de <em>La Boca</em></h1>
+    <div class="hb-row">
+      <p class="hb-sub fade-in" style="--d:.75s">A pocas cuadras de la Bombonera, en Caffarena 64: parrilla tradicional porteña, ojo de bife y asado de tira a precios de barrio.</p>
+      <div class="hb-act fade-in" style="--d:.9s">
+        <div class="ctas"><a class="btn btn-primary" href="tel:+541143629912"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>Reservá tu mesa</a><a class="btn btn-ghost" href="#carta" data-go="carta">Ver la carta</a></div>
+        <p class="status" data-status><i></i><span>Horario de hoy</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="mq hb-mq" aria-hidden="true"><div class="mq-track"><span class="mq-item">Ojo de bife</span><span class="mq-item">Asado de tira</span><span class="mq-item">Vacío</span><span class="mq-item">Chorizo</span><span class="mq-item">Provoleta</span><span class="mq-item">Mollejas</span><span class="mq-item">Ojo de bife</span><span class="mq-item">Asado de tira</span><span class="mq-item">Vacío</span><span class="mq-item">Chorizo</span><span class="mq-item">Provoleta</span><span class="mq-item">Mollejas</span></div></div>
+</section>
+
+<section class="sec" id="nosotros">
+  <div class="wrap about">
+    <div class="txt">
+      <span class="eyebrow" data-r>Nosotros</span>
+      <h2 class="h2" data-r>Parrilla porteña <em>de verdad</em></h2>
+      <p class="lead" data-r>Un bodegón con historia, cerca de la Usina del Arte y de la cancha. Cortes clásicos a la parrilla, porciones generosas y el ambiente de siempre.</p>
+      
+      <div class="facts" data-stagger>
+        <div class="fact" data-r><b>4,4<small style="font-size:.5em;margin-left:4px;color:var(--star,#f5b301)">★</small></b><span>puntaje en Google</span></div><div class="fact" data-r><b>4.372</b><span>reseñas en Google</span></div><div class="fact" data-r><b>6 días</b><span>cerramos los lunes</span></div>
+      </div>
+    </div>
+    <div class="about-media" data-r="clip">
+      <div class="ph"><img src="../img/salon-oscuro.webp" alt="Foto ilustrativa" width="1600" height="1068" data-px="0.06" loading="lazy" decoding="async"></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-hl" id="destacados">
+  <div class="wrap">
+    <div class="hl-head">
+      <div><span class="eyebrow" data-r>Lo más pedido</span><h2 class="h2" data-r>Lo que más <em>sale</em></h2></div>
+      <a class="btn btn-ghost" href="#carta" data-go="carta" data-r>Ver la carta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="hl-grid" style="--hl-cols:3" data-stagger>
+      
+      <article class="card" data-r data-tilt>
+        
+        <div class="ph"><img src="../img/bife-esparragos.webp" alt="Ojo de bife" width="1000" height="667" loading="lazy" decoding="async"></div>
+        <div class="body"><h3>Ojo de bife</h3><p>Marmolado, jugoso y en su punto.</p></div>
+      </article>
+      
+      <article class="card" data-r data-tilt>
+        
+        <div class="ph"><img src="../img/pollo-grillado.webp" alt="Pollo a la parrilla" width="940" height="900" loading="lazy" decoding="async"></div>
+        <div class="body"><h3>Pollo a la parrilla</h3><p>Dorado y con chimichurri.</p></div>
+      </article>
+      
+      <article class="card" data-r data-tilt>
+        
+        <div class="ph"><img src="../img/platos-servidos.webp" alt="Platos de bodegón" width="1800" height="789" loading="lazy" decoding="async"></div>
+        <div class="body"><h3>Platos de bodegón</h3><p>Para compartir entre todos.</p></div>
+      </article>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="sec sec-extra x-cortes" id="parrilla">
+  <div class="wrap">
+    <div class="x-head">
+      <span class="eyebrow" data-r>La parrilla</span>
+      <h2 class="h2" data-r>Los cortes de <em>la casa</em></h2>
+      <p class="lead" data-r>Elegí el corte y contanos cómo te gusta. El parrillero se encarga del resto.</p>
+    </div>
+    <div class="cortes" data-r>
+      <div class="cortes-list" role="tablist" aria-label="Cortes">
+        <button type="button" role="tab" class="corte" data-i="0" aria-selected="true"><b>Asado de tira</b><span>El clásico</span></button><button type="button" role="tab" class="corte" data-i="1" aria-selected="false"><b>Vacío</b><span>Jugoso</span></button><button type="button" role="tab" class="corte" data-i="2" aria-selected="false"><b>Entraña</b><span>Tierna</span></button><button type="button" role="tab" class="corte" data-i="3" aria-selected="false"><b>Bife de chorizo</b><span>Para compartir</span></button><button type="button" role="tab" class="corte" data-i="4" aria-selected="false"><b>Ojo de bife</b><span>Marmolado</span></button><button type="button" role="tab" class="corte" data-i="5" aria-selected="false"><b>Matambre</b><span>A la pizza</span></button>
+      </div>
+      <div class="corte-card">
+        <div class="corte-info on" data-i="0"><p class="corte-name">Asado de tira</p><p class="muted">Costilla cortada en tiras, cocción lenta y ese sabor a hueso que define a una parrilla.</p></div><div class="corte-info" data-i="1"><p class="corte-name">Vacío</p><p class="muted">Con su capa de grasa que se dora despacio hasta quedar crocante por fuera.</p></div><div class="corte-info" data-i="2"><p class="corte-name">Entraña</p><p class="muted">Fina y sabrosa, se hace rápido a fuego fuerte. Ideal para arrancar.</p></div><div class="corte-info" data-i="3"><p class="corte-name">Bife de chorizo</p><p class="muted">Alto y jugoso, con su borde de grasa. El corte que más se pide.</p></div><div class="corte-info" data-i="4"><p class="corte-name">Ojo de bife</p><p class="muted">Del centro del bife ancho, con vetas que le dan suavidad y sabor.</p></div><div class="corte-info" data-i="5"><p class="corte-name">Matambre</p><p class="muted">Fino y tierno, terminado con salsa y muzzarella gratinada.</p></div>
+        <div class="punto">
+          <p class="punto-q">¿Cómo te gusta?</p>
+          <div class="steak" aria-hidden="true"><i></i></div>
+          <div class="punto-btns" role="group" aria-label="Punto de cocción">
+            <button type="button" data-p="0">Jugoso</button><button type="button" data-p="1" class="on">A punto</button><button type="button" data-p="2">Cocido</button>
+          </div>
+          <p class="punto-txt muted">Rosado en el centro y bien sellado por fuera. El parrillero lo saca justo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-menu" id="carta">
+  <div class="wrap menu-wrap" data-tabs>
+    <div class="menu-side">
+      <span class="eyebrow" data-r>La carta</span>
+      <h2 class="h2" data-r>La <em>carta</em></h2>
+      <p class="muted" data-r>Una muestra de lo que vas a encontrar. Preguntá por los platos del día y las sugerencias de la casa.</p>
+      <div class="tabs" role="tablist" aria-label="Categorías de la carta" data-r>
+        <button class="tab" role="tab" type="button" id="tab1" aria-controls="pan1">Entradas</button><button class="tab" role="tab" type="button" id="tab2" aria-controls="pan2">Parrilla</button><button class="tab" role="tab" type="button" id="tab3" aria-controls="pan3">Guarniciones</button><button class="tab" role="tab" type="button" id="tab4" aria-controls="pan4">Postres</button>
+      </div>
+    </div>
+    <div class="menu-list" data-r>
+      
+      <div class="panel" role="tabpanel" id="pan1" aria-labelledby="tab1">
+        <h3>Entradas</h3>
+        <div class="item"><h4>Provoleta a la parrilla</h4><span class="pr"></span><p>Con orégano, ají molido y aceite de oliva.</p></div><div class="item"><h4>Empanadas de carne</h4><span class="pr"></span><p>Cortada a cuchillo, al horno o fritas.</p></div><div class="item"><h4>Chorizo y morcilla</h4><span class="pr"></span><p>Las achuras de siempre para arrancar.</p></div><div class="item"><h4>Mollejas al limón</h4><span class="pr"></span><p>Crocantes por fuera, tiernas por dentro.</p></div>
+      </div>
+      
+      <div class="panel" role="tabpanel" id="pan2" aria-labelledby="tab2">
+        <h3>Parrilla</h3>
+        <div class="item"><h4>Asado de tira</h4><span class="pr"></span><p>Cocción lenta, sabor a hueso.</p></div><div class="item"><h4>Vacío</h4><span class="pr"></span><p>Jugoso, con su grasita crocante.</p></div><div class="item"><h4>Entraña</h4><span class="pr"></span><p>Fina, tierna y sabrosa.</p></div><div class="item"><h4>Bife de chorizo</h4><span class="pr"></span><p>Alto y jugoso, para uno o para compartir.</p></div><div class="item"><h4>Ojo de bife</h4><span class="pr"></span><p>Marmolado, el más tierno de la casa.</p></div><div class="item"><h4>Parrillada para dos</h4><span class="pr"></span><p>Asado, vacío, chorizo, morcilla y achuras.</p></div>
+      </div>
+      
+      <div class="panel" role="tabpanel" id="pan3" aria-labelledby="tab3">
+        <h3>Guarniciones</h3>
+        <div class="item"><h4>Papas fritas</h4><span class="pr"></span><p>Cortadas a mano.</p></div><div class="item"><h4>Papas a la provenzal</h4><span class="pr"></span><p>Con ajo y perejil.</p></div><div class="item"><h4>Ensalada mixta</h4><span class="pr"></span><p>Lechuga, tomate y cebolla.</p></div><div class="item"><h4>Puré de calabaza</h4><span class="pr"></span><p>Suave y casero.</p></div>
+      </div>
+      
+      <div class="panel" role="tabpanel" id="pan4" aria-labelledby="tab4">
+        <h3>Postres</h3>
+        <div class="item"><h4>Flan casero</h4><span class="pr"></span><p>Con dulce de leche y crema.</p></div><div class="item"><h4>Panqueque de dulce de leche</h4><span class="pr"></span><p>Recién hecho, con azúcar quemada.</p></div><div class="item"><h4>Queso y dulce</h4><span class="pr"></span><p>El vigilante de toda la vida.</p></div>
+      </div>
+      
+      <p class="menu-note">Carta de muestra para la vista previa: se reemplaza por la carta y los precios reales del local.</p>
+    </div>
+  </div>
+</section>
+
+<div class="mq mq-band" aria-hidden="true"><div class="mq-track"><span class="mq-item">Asado de tira</span><span class="mq-item">Vacío</span><span class="mq-item">Entraña</span><span class="mq-item">Bife de chorizo</span><span class="mq-item">Provoleta</span><span class="mq-item">Mollejas</span><span class="mq-item">Asado de tira</span><span class="mq-item">Vacío</span><span class="mq-item">Entraña</span><span class="mq-item">Bife de chorizo</span><span class="mq-item">Provoleta</span><span class="mq-item">Mollejas</span></div></div>
+
+<section class="sec gal">
+  <div class="wrap gal-head">
+    <div><span class="eyebrow" data-r>Galería</span><h2 class="h2" data-r>El fuego, <em>de cerca</em></h2></div>
+    <div class="gal-ctrl"><button type="button" data-dir="prev" aria-label="Fotos anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button><button type="button" data-dir="next" aria-label="Fotos siguientes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+  </div>
+  <div class="gal-track">
+    <figure class="gal-item" style="margin:0"><img src="../img/platos-servidos.webp" alt="Foto ilustrativa" width="1800" height="789" loading="lazy" decoding="async"></figure><figure class="gal-item" style="margin:0"><img src="../img/bife-esparragos.webp" alt="Foto ilustrativa" width="1000" height="667" loading="lazy" decoding="async"></figure><figure class="gal-item" style="margin:0"><img src="../img/pollo-grillado.webp" alt="Foto ilustrativa" width="940" height="900" loading="lazy" decoding="async"></figure><figure class="gal-item" style="margin:0"><img src="../img/salon-oscuro.webp" alt="Foto ilustrativa" width="1600" height="1068" loading="lazy" decoding="async"></figure><figure class="gal-item" style="margin:0"><img src="../img/picada.webp" alt="Foto ilustrativa" width="1024" height="1024" loading="lazy" decoding="async"></figure><figure class="gal-item" style="margin:0"><img src="../img/mesa-larga.webp" alt="Foto ilustrativa" width="1600" height="1136" loading="lazy" decoding="async"></figure><figure class="gal-item" style="margin:0"><img src="../img/huevos-papas.webp" alt="Foto ilustrativa" width="1000" height="667" loading="lazy" decoding="async"></figure><figure class="gal-item" style="margin:0"><img src="../img/madera-oscura.webp" alt="Foto ilustrativa" width="1400" height="996" loading="lazy" decoding="async"></figure>
+  </div>
+  <div class="wrap"><div class="gal-bar"><i></i></div><p class="gal-note">Fotos de stock ilustrativas. En el sitio final van las fotos reales de El Obrero.</p></div>
+</section>
+
+
+<section class="sec sec-rev">
+  <div class="wrap rev">
+    <div class="rev-num" data-count="4.4" data-dec="1">4,4</div>
+    <div class="rev-txt">
+      <span class="eyebrow" data-r>Lo que dicen en Google</span>
+      <span class="stars" role="img" aria-label="4,4 de 5 estrellas"><i data-w="88.0%"></i></span>
+      <p class="h3x" data-r><b data-count="4372">4.372</b> reseñas de clientes en Google Maps.</p>
+      <p><a class="btn btn-ghost btn-sm" href="https://maps.google.com/?cid=16811345397238206803" target="_blank" rel="noopener">Leer las reseñas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec sec-visit" id="visitanos">
+  <div class="wrap visit">
+    <div class="visit-info">
+      <span class="eyebrow" data-r>Visitanos</span>
+      <p class="addr" data-r>Agustín R. Caffarena 64<br><span class="muted" style="font-size:.6em">La Boca, CABA</span></p>
+      <p class="status" data-status><i></i><span>Horario de hoy</span></p>
+      <table class="hours" data-r><caption class="sr" style="position:absolute;left:-9999px">Horarios</caption><tbody>
+        <tr data-d="0"><td>Lunes</td><td>Cerrado</td></tr><tr data-d="1"><td>Martes</td><td>20 a 2 h</td></tr><tr data-d="2"><td>Miércoles</td><td>20 a 2 h</td></tr><tr data-d="3"><td>Jueves</td><td>20 a 2 h</td></tr><tr data-d="4"><td>Viernes</td><td>20 a 2 h</td></tr><tr data-d="5"><td>Sábado</td><td>12 a 16 h y 20 a 2 h</td></tr><tr data-d="6"><td>Domingo</td><td>12 a 16 h</td></tr>
+      </tbody></table>
+      <div class="copy-row" data-r>
+        <a class="btn btn-primary" href="tel:+541143629912"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>Reservá tu mesa</a>
+        <button class="btn btn-ghost btn-sm" type="button" data-copy="11 4362-9912"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>11 4362-9912</button>
+      </div>
+    </div>
+    <div class="map" data-r="scale">
+      <svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g transform="rotate(5.8 300 210)"><rect x="151" y="295" width="90" height="38" rx="8" style="fill:color-mix(in srgb,var(--accent-2,var(--accent)) 26%,transparent)"/><rect x="463" y="347" width="38" height="38" rx="6" style="fill:color-mix(in srgb,var(--accent) 14%,transparent)"/><g style="stroke:var(--line);stroke-width:10"><line x1="-116" y1="-260" x2="-116" y2="680"/><line x1="-64" y1="-260" x2="-64" y2="680"/><line x1="-12" y1="-260" x2="-12" y2="680"/><line x1="40" y1="-260" x2="40" y2="680"/><line x1="92" y1="-260" x2="92" y2="680"/><line x1="144" y1="-260" x2="144" y2="680"/><line x1="196" y1="-260" x2="196" y2="680"/><line x1="248" y1="-260" x2="248" y2="680"/><line x1="300" y1="-260" x2="300" y2="680"/><line x1="352" y1="-260" x2="352" y2="680"/><line x1="404" y1="-260" x2="404" y2="680"/><line x1="456" y1="-260" x2="456" y2="680"/><line x1="508" y1="-260" x2="508" y2="680"/><line x1="560" y1="-260" x2="560" y2="680"/><line x1="612" y1="-260" x2="612" y2="680"/><line x1="664" y1="-260" x2="664" y2="680"/><line x1="716" y1="-260" x2="716" y2="680"/><line x1="-260" y1="-180" x2="860" y2="-180"/><line x1="-260" y1="-128" x2="860" y2="-128"/><line x1="-260" y1="-76" x2="860" y2="-76"/><line x1="-260" y1="-24" x2="860" y2="-24"/><line x1="-260" y1="28" x2="860" y2="28"/><line x1="-260" y1="80" x2="860" y2="80"/><line x1="-260" y1="132" x2="860" y2="132"/><line x1="-260" y1="184" x2="860" y2="184"/><line x1="-260" y1="236" x2="860" y2="236"/><line x1="-260" y1="288" x2="860" y2="288"/><line x1="-260" y1="340" x2="860" y2="340"/><line x1="-260" y1="392" x2="860" y2="392"/><line x1="-260" y1="444" x2="860" y2="444"/><line x1="-260" y1="496" x2="860" y2="496"/><line x1="-260" y1="548" x2="860" y2="548"/><line x1="-260" y1="600" x2="860" y2="600"/><line x1="-260" y1="652" x2="860" y2="652"/></g><line x1="-100" y1="519" x2="760" y2="-122" style="stroke:color-mix(in srgb,var(--ink) 10%,transparent);stroke-width:14"/><g style="stroke:color-mix(in srgb,var(--ink) 17%,transparent);stroke-width:20"><line x1="300" y1="-260" x2="300" y2="680"/><line x1="-260" y1="340" x2="860" y2="340"/></g><text transform="translate(318 360) rotate(-90)" style="fill:var(--muted);font:700 12px var(--body);letter-spacing:.16em">AGUSTÍN R. CAFFARENA</text></g></svg>
+      <span class="pulse"></span>
+      <div class="pin"><b>El Obrero</b><i></i></div>
+      <div class="map-cta"><span>Agustín R. Caffarena 64 · La Boca</span><a class="btn btn-primary btn-sm" href="https://maps.google.com/?cid=16811345397238206803" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Cómo llegar</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-cta">
+  <div class="wrap cta-band">
+    <span class="eyebrow" data-r>Parrilla y bodegón · La Boca</span>
+    <p class="big" data-r>Antes o después <em>del partido</em></p>
+    <div class="ctas" data-r><a class="btn btn-primary" href="tel:+541143629912"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>Reservá tu mesa</a><a class="btn btn-ghost" href="https://maps.google.com/?cid=16811345397238206803" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Cómo llegar</a></div>
+  </div>
+</section>
+</main>
+<footer class="foot"><div class="wrap">
+  <div><p class="flogo">El Obrero</p><p style="margin-top:8px">Parrilla y bodegón en La Boca</p></div>
+  <div><p>Agustín R. Caffarena 64</p><p>La Boca, Buenos Aires</p><p>11 4362-9912</p></div>
+  <div><a href="https://maps.google.com/?cid=16811345397238206803" target="_blank" rel="noopener">Google Maps</a><br><a href="#carta" data-go="carta">Carta</a><br><a href="#visitanos" data-go="visitanos">Horarios</a></div>
+  <p class="demo-note">Vista previa de un sitio web para El Obrero. Dirección, teléfono, horarios y calificación tomados de su ficha pública de Google Maps; fotos de stock y carta ilustrativas.</p>
+</div></footer>
+<a class="fab" style="--fab-bg:var(--accent);color:var(--accent-ink)" href="tel:+541143629912"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>Llamar</a>
+
+<script type="application/json" id="biz">{"slug": "el-obrero", "name": "El Obrero", "hours": [[], [[1200, 1560]], [[1200, 1560]], [[1200, 1560]], [[1200, 1560]], [[720, 960], [1200, 1560]], [[720, 960]]], "dia": ["Lunes: guiso de lentejas", "Martes: pastel de papas", "Miércoles: pollo al verdeo con puré", "Jueves: milanesa napolitana con fritas", "Viernes: tarta de jamón y queso", "Sábado: canelones de verdura", "Domingo: ravioles con tuco"], "horno": ["Medialunas y pan recién salidos del horno", "Sándwiches de miga y tartas para el mediodía", "Facturas calentitas para la merienda", "Mañana temprano, pan caliente"]}</script>
+<script>
+(function(){
+var D=JSON.parse(document.getElementById('biz').textContent);
+var root=document.documentElement;
+var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var FINE=window.matchMedia&&matchMedia('(pointer: fine)').matches;
+root.classList.add('js');
+function $(s,c){return (c||document).querySelector(s)}
+function $$(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))}
+
+/* demo bar */
+var db=$('.demo-bar button'); if(db) db.addEventListener('click',function(){db.closest('.demo-bar').remove()});
+
+/* nav */
+var nav=$('.nav');
+function onScrollNav(){ if(nav) nav.classList.toggle('scrolled',window.scrollY>30) }
+window.addEventListener('scroll',onScrollNav,{passive:true}); onScrollNav();
+var bb=$('.burger-btn');
+if(bb) bb.addEventListener('click',function(){var o=document.body.classList.toggle('menu-open');bb.setAttribute('aria-expanded',o?'true':'false')});
+$$('.mobile-menu a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu-open');if(bb)bb.setAttribute('aria-expanded','false')})});
+
+/* smooth in-page links without touching the hash */
+$$('a[data-go]').forEach(function(a){a.addEventListener('click',function(e){var t=document.getElementById(a.getAttribute('data-go'));if(!t)return;e.preventDefault();t.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'})})});
+
+/* split headline words */
+$$('[data-split]').forEach(function(el){
+  if(RM) return;
+  var i=0;
+  (function walk(node){
+    Array.prototype.slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        var parts=n.textContent.split(/(\s+)/);var frag=document.createDocumentFragment();
+        parts.forEach(function(p){ if(!p) return; if(/^\s+$/.test(p)){frag.appendChild(document.createTextNode(p));return}
+          var w=document.createElement('span');w.className='w';var s=document.createElement('span');s.textContent=p;s.style.setProperty('--i',i++);w.appendChild(s);frag.appendChild(w)});
+        n.parentNode.replaceChild(frag,n);
+      } else if(n.nodeType===1 && n.tagName!=='BR' && !n.classList.contains('w')){
+        if(n.hasAttribute('data-nosplit')){var w=document.createElement('span');w.className='w';var s=document.createElement('span');s.style.setProperty('--i',i++);n.parentNode.insertBefore(w,n);s.appendChild(n);w.appendChild(s);}
+        else walk(n);
+      }
+    });
+  })(el);
+});
+
+/* reveal on scroll: only things below the fold start hidden */
+if('IntersectionObserver' in window && !RM){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -7% 0px'});
+  $$('[data-r]').forEach(function(el){ if(el.getBoundingClientRect().top>innerHeight*0.94){el.classList.add('pre');io.observe(el)} });
+  $$('[data-stagger]').forEach(function(g){ $$('[data-r]',g).forEach(function(el,k){el.style.setProperty('--d',(k*0.09)+'s')}) });
+}
+
+/* parallax */
+var px=$$('[data-px]');
+var ticking=false;
+function doPx(){ticking=false;var vh=innerHeight;px.forEach(function(el){var r=el.getBoundingClientRect();if(r.bottom<-200||r.top>vh+200)return;var c=(r.top+r.height/2-vh/2);el.style.transform='translate3d(0,'+(c*-parseFloat(el.getAttribute('data-px'))).toFixed(1)+'px,0)'})}
+if(px.length && !RM){window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(doPx)}},{passive:true});doPx()}
+
+/* tabs */
+$$('[data-tabs]').forEach(function(box){
+  var tabs=$$('.tab',box),panels=$$('.panel',box);if(!tabs.length)return;
+  box.classList.add('tabs-ready');
+  function sel(k){tabs.forEach(function(t,j){t.setAttribute('aria-selected',j===k?'true':'false');t.tabIndex=j===k?0:-1});panels.forEach(function(p,j){p.classList.toggle('on',j===k)})}
+  tabs.forEach(function(t,k){t.addEventListener('click',function(){sel(k)});t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){var n=(k+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;sel(n);tabs[n].focus()}})});
+  sel(0);
+});
+
+/* gallery drag + arrows + progress */
+$$('.gal').forEach(function(g){
+  var tr=$('.gal-track',g),bar=$('.gal-bar i',g);if(!tr)return;
+  function prog(){var max=tr.scrollWidth-tr.clientWidth;var w=tr.clientWidth/tr.scrollWidth*100;if(bar){bar.style.width=Math.max(12,w)+'%';bar.style.left=(max>0?tr.scrollLeft/max*(100-Math.max(12,w)):0)+'%'}}
+  tr.addEventListener('scroll',prog,{passive:true});window.addEventListener('resize',prog);prog();
+  $$('.gal-ctrl button',g).forEach(function(b){b.addEventListener('click',function(){var it=$('.gal-item',tr);var step=it?it.getBoundingClientRect().width+16:300;tr.scrollBy({left:(b.dataset.dir==='prev'?-1:1)*step,behavior:'smooth'})})});
+  if(FINE){var down=false,sx=0,sl=0,moved=false;
+    tr.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;down=true;moved=false;sx=e.clientX;sl=tr.scrollLeft;tr.classList.add('drag')});
+    window.addEventListener('pointermove',function(e){if(!down)return;var dx=e.clientX-sx;if(Math.abs(dx)>3)moved=true;tr.scrollLeft=sl-dx});
+    window.addEventListener('pointerup',function(){if(!down)return;down=false;tr.classList.remove('drag')});
+  }
+});
+
+/* numbers */
+function fmtNum(v,dec){return dec?v.toFixed(1).replace('.',','):Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g,'.')}
+var numIO='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;numIO.unobserve(e.target);var el=e.target,to=parseFloat(el.dataset.count),dec=el.dataset.dec==='1';if(RM){el.textContent=fmtNum(to,dec);return}var t0=null;function step(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/1500);var v=to*(1-Math.pow(1-p,3));el.textContent=fmtNum(v,dec);if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step);var st=$('.stars i',el.closest('section'));if(st)st.style.width=st.dataset.w})},{threshold:.4}):null;
+$$('[data-count]').forEach(function(el){ if(numIO) numIO.observe(el); else el.textContent=fmtNum(parseFloat(el.dataset.count),el.dataset.dec==='1') });
+if(!numIO) $$('.stars i').forEach(function(s){s.style.width=s.dataset.w});
+
+/* open now (Buenos Aires time) */
+var DAYN=['lunes','martes','miércoles','jueves','viernes','sábado','domingo'];
+function baNow(){try{var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Argentina/Buenos_Aires',weekday:'short',hour:'numeric',minute:'numeric',day:'numeric',hour12:false}).formatToParts(new Date());var o={};p.forEach(function(x){o[x.type]=x.value});var wd=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].indexOf(o.weekday);var h=parseInt(o.hour,10)%24;return{d:wd,m:h*60+parseInt(o.minute,10),day:parseInt(o.day,10)}}catch(e){var n=new Date(Date.now()-3*3600e3);return{d:(n.getUTCDay()+6)%7,m:n.getUTCHours()*60+n.getUTCMinutes(),day:n.getUTCDate()}}}
+function hm(m){m=m%1440;var h=Math.floor(m/60),mi=m%60;return h+(mi?':'+(mi<10?'0':'')+mi:'')}
+function at(m){m=m%1440;if(m===0)return 'la medianoche';var h=Math.floor(m/60);return (h===1?'la ':'las ')+hm(m)}
+var H=D.hours||[],now=baNow();
+var st=null;
+if(H.some(function(x){return x&&x.length})){
+  var today=H[now.d]||[],yest=H[(now.d+6)%7]||[];
+  var open=null;
+  today.forEach(function(iv){if(now.m>=iv[0]&&now.m<iv[1])open=iv});
+  if(!open)yest.forEach(function(iv){if(iv[1]>1440&&now.m+1440<iv[1])open=[iv[0]-1440,iv[1]-1440]});
+  if(open){var left=open[1]-now.m;st={open:true,txt:(open[1]-open[0]>=1440?'Abierto las 24 horas':(left<=45?'Cierra pronto · a '+at(open[1]):'Abierto ahora · hasta '+at(open[1])))}}
+  else{
+    var nx=null;today.forEach(function(iv){if(!nx&&iv[0]>now.m)nx={k:0,m:iv[0]}});
+    for(var k=1;k<=7&&!nx;k++){var dd=H[(now.d+k)%7];if(dd&&dd.length)nx={k:k,m:dd[0][0]}}
+    st={open:false,txt:nx?('Cerrado · abre '+(nx.k===0?'hoy':nx.k===1?'mañana':'el '+DAYN[(now.d+nx.k)%7])+' a '+at(nx.m)):'Cerrado'};
+  }
+}
+$$('[data-status]').forEach(function(el){if(!st){el.remove();return}el.classList.add(st.open?'open':'closed');el.querySelector('span').textContent=st.txt});
+var tr2=$('.hours tr[data-d="'+now.d+'"]');if(tr2)tr2.classList.add('today');
+
+/* ñoquis del 29 */
+$$('.nq').forEach(function(el){var d=now.day;var txt;if(d===29)txt='Hoy es 29: ñoquis con la plata abajo del plato';else{var n=d<29?29-d:(29+30-d);txt='Ñoquis del 29 · faltan '+n+(n===1?' día':' días')}el.querySelector('span').textContent=txt;el.classList.add('on')});
+
+/* copy */
+var toast=document.createElement('div');toast.className='toast';toast.setAttribute('role','status');document.body.appendChild(toast);
+function say(t){toast.textContent=t;toast.classList.add('on');clearTimeout(say.t);say.t=setTimeout(function(){toast.classList.remove('on')},1900)}
+$$('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var v=b.getAttribute('data-copy');var ok=function(){say('Copiado: '+v)};try{navigator.clipboard.writeText(v).then(ok,function(){say(v)})}catch(e){say(v)}})});
+
+/* floating action button */
+var fab=$('.fab');if(fab){window.addEventListener('scroll',function(){fab.classList.toggle('show',window.scrollY>innerHeight*0.6)},{passive:true})}
+
+/* micro-interactions (mouse only) */
+if(FINE&&!RM){
+  $$('.btn').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.18).toFixed(1)+'px,'+((e.clientY-r.top-r.height/2)*.28).toFixed(1)+'px)'});b.addEventListener('pointerleave',function(){b.style.transform=''})});
+  $$('[data-tilt]').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();var x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateY('+(x*7).toFixed(2)+'deg) rotateX('+(-y*7).toFixed(2)+'deg) translateY(-4px)'});c.addEventListener('pointerleave',function(){c.style.transform=''})});
+}
+
+
+window.__D=D;window.__RM=RM;window.__FINE=FINE;
+})();
+
+(function(){var c=document.querySelector('canvas.embers');if(!c||window.__RM)return;var x=c.getContext('2d');var W=0,H=0,dpr=Math.min(2,window.devicePixelRatio||1),ps=[],N=innerWidth<700?46:96;
+var sp=document.createElement('canvas');sp.width=sp.height=64;var s=sp.getContext('2d');var g=s.createRadialGradient(32,32,0,32,32,32);g.addColorStop(0,'rgba(255,236,190,1)');g.addColorStop(.25,'rgba(255,170,70,.95)');g.addColorStop(.6,'rgba(255,90,20,.35)');g.addColorStop(1,'rgba(255,60,0,0)');s.fillStyle=g;s.fillRect(0,0,64,64);
+function rs(){var r=c.getBoundingClientRect();W=r.width;H=r.height;c.width=Math.round(W*dpr);c.height=Math.round(H*dpr);x.setTransform(dpr,0,0,dpr,0,0)}
+function seed(p,init){p.x=Math.random()*W;p.y=init?Math.random()*H:H+20;p.r=Math.random()*5+2;p.vy=-(Math.random()*.9+.35);p.vx=(Math.random()-.5)*.3;p.t=0;p.m=Math.random()*240+160;p.w=Math.random()*6.28}
+rs();for(var i=0;i<N;i++){var p={};seed(p,true);ps.push(p)}
+var vis=true;if('IntersectionObserver' in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(c);
+window.addEventListener('resize',rs);
+(function f(){requestAnimationFrame(f);if(!vis)return;x.clearRect(0,0,W,H);x.globalCompositeOperation='lighter';for(var i=0;i<ps.length;i++){var p=ps[i];p.t++;p.w+=.045;p.x+=p.vx+Math.sin(p.w)*.4;p.y+=p.vy;var a=Math.max(0,1-p.t/p.m)*(.55+Math.random()*.45);x.globalAlpha=a;var r=p.r*(1-p.t/p.m*.5);x.drawImage(sp,p.x-r*2,p.y-r*2,r*4,r*4);if(p.t>p.m||p.y<-30)seed(p,false)}x.globalAlpha=1;x.globalCompositeOperation='source-over'})();
+})();
+(function(){var box=document.querySelector('.cortes');if(!box)return;var bs=box.querySelectorAll('.corte'),inf=box.querySelectorAll('.corte-info');
+bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(x){x.setAttribute('aria-selected',x===b?'true':'false')});inf.forEach(function(x){x.classList.toggle('on',x.dataset.i===b.dataset.i)})})});
+var txt=['Bien rojo en el centro, apenas tibio. Para los que saben lo que quieren.','Rosado en el centro y bien sellado por fuera. El parrillero lo saca justo.','Cocido parejo, sin rastros de rosa. Igual de tierno si el corte acompaña.'];
+var pb=box.querySelectorAll('.punto-btns button'),st=box.querySelector('.steak'),pt=box.querySelector('.punto-txt');
+pb.forEach(function(b){b.addEventListener('click',function(){pb.forEach(function(x){x.classList.toggle('on',x===b)});st.dataset.p=b.dataset.p;pt.textContent=txt[+b.dataset.p]})});st.dataset.p='1';
+})();
+</script>
+</body>
+</html>
