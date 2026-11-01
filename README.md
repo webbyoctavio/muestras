@@ -1,7 +1,7 @@
 # Muestras
 
-Propuestas de diseño web para negocios de San Miguel, Muñiz, Bella Vista y José C. Paz,
-y para locales gastronómicos de Capital Federal.
+Propuestas de diseño web para negocios de zona norte (San Miguel, Muñiz, Bella Vista, José C. Paz
+y otros partidos) y para locales gastronómicos de Capital Federal.
 Cada carpeta es una web de muestra para un local. No son las webs oficiales de los negocios.
 
 Sitio publicado con GitHub Pages: https://webbyoctavio.github.io/muestras/
@@ -9,6 +9,53 @@ Sitio publicado con GitHub Pages: https://webbyoctavio.github.io/muestras/
 ## Zona norte (San Miguel, Muñiz, Bella Vista y José C. Paz)
 
 Las fotos son de ejemplo (Unsplash, Pexels y Burst de Shopify, de uso libre).
+
+## Zona norte: negocios de nicho (noviembre 2026)
+
+30 muestras para negocios de nicho de Vicente López, San Isidro, San Fernando, Tigre, Escobar, Pilar,
+Malvinas Argentinas, San Miguel y José C. Paz: escuelas de kitesurf, remo y equitación, velería,
+guardería náutica, viveros, luthier, marquería, tapicería, cerrajería, relojería, encuadernación y más.
+Ninguno tiene sitio web cargado en Google Maps (ni siquiera un Instagram como web) y ninguno es cadena.
+
+- Dirección, teléfono, horarios y puntaje salen de la ficha pública de Google Maps de cada negocio (noviembre 2026).
+- Los servicios son de ejemplo. Las fotos son de StockSnap (CC0), Burst (licencia libre de Shopify) y
+  Wikimedia Commons; las de Commons llevan su autor y licencia al pie de la página que las usa.
+  Están en `img/zn/`, con una versión `-sm` más liviana para celular.
+- `img/og/` tiene la imagen que muestra WhatsApp al compartir cada link.
+- Todas las páginas llevan `noindex`.
+
+| Negocio | Rubro | Localidad | Muestra |
+|---|---|---|---|
+| Flores Interflor | Florería | Belén de Escobar (Escobar) | [flores-interflor/](https://webbyoctavio.github.io/muestras/flores-interflor/) |
+| El Mundo de los Cactus | Vivero de cactus y suculentas | Escobar (Escobar) | [el-mundo-de-los-cactus/](https://webbyoctavio.github.io/muestras/el-mundo-de-los-cactus/) |
+| Altair | Indumentaria personalizada y estampados | José C. Paz (José C. Paz) | [altair-indumentaria/](https://webbyoctavio.github.io/muestras/altair-indumentaria/) |
+| Ag Works | Taller de motos | Ing. Adolfo Sourdeaux (Malvinas Argentinas) | [ag-works-motos/](https://webbyoctavio.github.io/muestras/ag-works-motos/) |
+| Compostura de Calzado Aaron | Compostura de calzado | Los Polvorines (Malvinas Argentinas) | [calzado-aaron/](https://webbyoctavio.github.io/muestras/calzado-aaron/) |
+| Almacén de Picadas | Fiambres y quesos artesanales | Pilar (Pilar) | [almacen-de-picadas/](https://webbyoctavio.github.io/muestras/almacen-de-picadas/) |
+| B&V Equitación | Escuela de equitación | Pilar (Pilar) | [byv-equitacion/](https://webbyoctavio.github.io/muestras/byv-equitacion/) |
+| La Pendulerie | Relojería y joyería | Pilar (Pilar) | [la-pendulerie/](https://webbyoctavio.github.io/muestras/la-pendulerie/) |
+| Pesca Don Jorge | Artículos de pesca y carnada | San Fernando (San Fernando) | [pesca-don-jorge/](https://webbyoctavio.github.io/muestras/pesca-don-jorge/) |
+| Máquinas para Coser | Venta y reparación de máquinas de coser | Virreyes (San Fernando) | [maquinas-para-coser-virreyes/](https://webbyoctavio.github.io/muestras/maquinas-para-coser-virreyes/) |
+| Don Marcos Varilla | Marquería y enmarcado | Acassuso (San Isidro) | [don-marcos-varilla/](https://webbyoctavio.github.io/muestras/don-marcos-varilla/) |
+| Puesto 49 | Audio vintage y vinilos | Acassuso (San Isidro) | [puesto-49/](https://webbyoctavio.github.io/muestras/puesto-49/) |
+| Velas Foxtrot | Velería | Beccar (San Isidro) | [velas-foxtrot/](https://webbyoctavio.github.io/muestras/velas-foxtrot/) |
+| Cerrajería Dac | Cerrajería | Boulogne (San Isidro) | [cerrajeria-dac/](https://webbyoctavio.github.io/muestras/cerrajeria-dac/) |
+| Laura Botti Fotografías | Fotografía de recién nacidos y familias | Martínez (San Isidro) | [laura-botti/](https://webbyoctavio.github.io/muestras/laura-botti/) |
+| Dr. Kite | Escuela de kitesurf y wingfoil | San Isidro (San Isidro) | [dr-kite/](https://webbyoctavio.github.io/muestras/dr-kite/) |
+| Pasado Imperfecto | Antigüedades y vintage | San Isidro (San Isidro) | [pasado-imperfecto/](https://webbyoctavio.github.io/muestras/pasado-imperfecto/) |
+| El Taller de Anita | Taller de cerámica | Villa Adelina (San Isidro) | [taller-de-anita/](https://webbyoctavio.github.io/muestras/taller-de-anita/) |
+| La Casa de las Lanas | Lanas e hilados | Bella Vista (San Miguel) | [la-casa-de-las-lanas/](https://webbyoctavio.github.io/muestras/la-casa-de-las-lanas/) |
+| Kairos Bonsai | Bonsái y paisajismo | San Miguel (San Miguel) | [kairos-bonsai/](https://webbyoctavio.github.io/muestras/kairos-bonsai/) |
+| Tobías Gallardo Luthería | Luthier | San Miguel (San Miguel) | [tobias-gallardo-lutheria/](https://webbyoctavio.github.io/muestras/tobias-gallardo-lutheria/) |
+| Guardería Náutica El Portal | Guardería náutica y bajada | Dique Luján (Tigre) | [guarderia-el-portal/](https://webbyoctavio.github.io/muestras/guarderia-el-portal/) |
+| Magirai | Pastelería | Don Torcuato (Tigre) | [magirai-pasteleria/](https://webbyoctavio.github.io/muestras/magirai-pasteleria/) |
+| Los Tocos | Almacén de jardín | General Pacheco (Tigre) | [los-tocos/](https://webbyoctavio.github.io/muestras/los-tocos/) |
+| Aventura en Kayak | Paseos en kayak por el Delta | Tigre (Tigre) | [aventura-en-kayak/](https://webbyoctavio.github.io/muestras/aventura-en-kayak/) |
+| Remo Delta | Escuela de remo | Tigre (Tigre) | [remo-delta/](https://webbyoctavio.github.io/muestras/remo-delta/) |
+| El Galpón Tango | Escuela de tango | Carapachay (Vicente López) | [el-galpon-tango/](https://webbyoctavio.github.io/muestras/el-galpon-tango/) |
+| Tecnobici | Bicicletería | Olivos (Vicente López) | [tecnobici/](https://webbyoctavio.github.io/muestras/tecnobici/) |
+| Encuadernación Artesanal | Encuadernación artesanal y comercial | Vicente López (Vicente López) | [encuadernacion-zona-norte/](https://webbyoctavio.github.io/muestras/encuadernacion-zona-norte/) |
+| Tapicería Gutiérrez | Tapicería del automóvil | Vicente López (Vicente López) | [tapiceria-gutierrez/](https://webbyoctavio.github.io/muestras/tapiceria-gutierrez/) |
 
 ## Capital Federal (gastronomía)
 
