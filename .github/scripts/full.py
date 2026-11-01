@@ -11,16 +11,27 @@ def get(url):
 os.makedirs(f"{OUT}/full", exist_ok=True)
 jobs = [l.split() for l in open("full.txt") if l.strip()]
 log = {}
+try:
+    from PIL import Image
+except Exception:
+    os.system("pip install -q pillow"); from PIL import Image
+import io
 def dl(p):
     name, urls = p[0], p[1:]
     for u in urls:
         b = get(u)
         if b and len(b) > 5000:
-            open(f"{OUT}/full/{name}.jpg", "wb").write(b); log[name] = u; return
+            try:
+                im = Image.open(io.BytesIO(b)); im = im.convert("RGB")
+                if max(im.size) > 2200: im.thumbnail((2200, 2200))
+                im.save(f"{OUT}/full/{name}.jpg", quality=88)
+                log[name] = [u, im.size]; return
+            except Exception as e:
+                continue
     log[name] = None
 with ThreadPoolExecutor(10) as ex: list(ex.map(dl, jobs))
 json.dump(log, open(f"{OUT}/full/_log.json", "w"), indent=1)
-print("full ok", sum(1 for v in log.values() if v), "/", len(log), "| 1920w:", sum(1 for v in log.values() if v and "/1920w/" in v), "1280w:", sum(1 for v in log.values() if v and "/1280w/" in v))
+print("full ok", sum(1 for v in log.values() if v), "/", len(log), "| originales:", sum(1 for v in log.values() if v and "download-photo" in v[0]))
 # 2) búsquedas extra en StockSnap
 def stocksnap(q):
     t = get("https://stocksnap.io/api/search-photos/" + urllib.parse.quote(q) + "/relevance/desc/1")
@@ -33,7 +44,7 @@ def stocksnap(q):
         slug = f"{kw[0]}-{kw[1]}_{r['img_id']}"
         out.append({"src": "stocksnap", "id": r["img_id"], "alt": ", ".join(kw[:8]), "thumb_url": f"https://cdn.stocksnap.io/img-thumbs/280h/{slug}.jpg", "full_url": f"https://cdn.stocksnap.io/img-thumbs/960w/{slug}.jpg"})
     return out
-if os.path.exists("queries4.txt"):
+if os.path.exists("queries4.txt") and not os.path.exists(f"{OUT}/meta4"):
     os.makedirs(f"{OUT}/meta4", exist_ok=True)
     for line in open("queries4.txt"):
         if "|" not in line: continue
