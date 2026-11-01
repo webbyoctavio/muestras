@@ -1,0 +1,30 @@
+kite|kitesurfing;kite surf;windsurfing|
+vela|sailboat;sailing;sail|sailboat
+remo|rowing;rowboat;canoe|rowing
+kayak|kayak;kayaking;paddle|kayak
+nautica|boats;marina;motorboat;dock|
+pesca|fishing;fishing rod;fishing lure|fishing
+caballo|horse riding;horse;equestrian|horse riding
+cactus|cactus;succulent;succulents|cactus
+bonsai|bonsai;bonsai tree|bonsai
+jardin|gardening;potted plants;garden;nursery plants|gardening
+flores|bouquet;florist;flowers|florist
+ceramica|pottery;ceramic;clay|pottery
+marcos|picture frame;frames;art gallery|picture frame
+tapiceria|car interior;leather seat;classic car|car interior
+antiguedades|antique;antiques;vintage shop|antique
+vintage|turntable;vinyl;record player;stereo|vinyl record
+luthier|guitar;violin;woodworking|guitar repair
+cerrajeria|keys;lock;padlock|keys
+bebe|newborn;baby;family|newborn
+tango|tango;dancing couple;dance|dancing
+lanas|yarn;wool;knitting|yarn
+remeras|t-shirt;screen printing;printing|t-shirt
+calzado|shoes;leather shoes;shoemaker|shoe repair
+motos|motorcycle;motorbike;mechanic|motorcycle
+bici|bicycle;bike;cycling|bike repair
+torta|cake;pastry;cookies|cake
+picada|cheese;charcuterie;salami|charcuterie
+reloj|clock;watch;watchmaker|clock
+libros|books;notebook;bookbinding|books
+coser|sewing machine;sewing;tailor|sewing
