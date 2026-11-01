@@ -1,6 +1,6 @@
 import json, os, time, urllib.request, urllib.parse
 from concurrent.futures import ThreadPoolExecutor
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+UA = "MuestrasBot/1.0 (https://github.com/webbyoctavio/muestras; demo sites) python-urllib/3"
 OUT = "tmp-fotos"
 def get(url):
     try:
@@ -29,7 +29,11 @@ def dl(p):
             except Exception as e:
                 continue
     log[name] = None
-with ThreadPoolExecutor(10) as ex: list(ex.map(dl, jobs))
+wm = [j for j in jobs if "wikimedia" in j[1]]
+other = [j for j in jobs if "wikimedia" not in j[1]]
+with ThreadPoolExecutor(10) as ex: list(ex.map(dl, other))
+for j in wm:
+    dl(j); time.sleep(4)
 json.dump(log, open(f"{OUT}/full/_log.json", "w"), indent=1)
 print("full ok", sum(1 for v in log.values() if v), "/", len(log), "| originales:", sum(1 for v in log.values() if v and "download-photo" in v[0]))
 # 2) búsquedas extra en StockSnap
