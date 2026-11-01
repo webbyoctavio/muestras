@@ -81,9 +81,10 @@ def do_burst_all():
             print(f"[{time.time()-T0:5.0f}s] burst {key}: {len(r)}", flush=True)
             time.sleep(12)
 
-bt = threading.Thread(target=do_burst_all); bt.start()
+bt = threading.Thread(target=do_burst_all) if os.environ.get('BURST') else None
+if bt: bt.start()
 with ThreadPoolExecutor(4) as ex: list(ex.map(do_ss, jobs))
-bt.join()
+if bt: bt.join()
 
 def dl(args):
     url, fn = args
