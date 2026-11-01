@@ -1,0 +1,12 @@
+bonsai|burst|bonsai
+bonsai|commons|bonsai tree pot
+remeras|burst|t-shirt
+remeras|burst|screen printing
+tango|burst|tango
+tango|commons|tango dancers Buenos Aires
+calzado|burst|shoe repair
+bici|burst|bike repair
+luthier|burst|guitar repair
+libros|burst|bookbinding
+motos|burst|motorcycle repair
+remo|burst|rowing

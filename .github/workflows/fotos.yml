@@ -13,7 +13,7 @@ jobs:
           ref: fotos-tmp
       - name: Buscar y descargar
         run: |
-          python3 .github/scripts/buscar.py
+          python3 .github/scripts/burst.py
           find tmp-fotos -type f | wc -l
           du -sh tmp-fotos
       - name: Guardar
