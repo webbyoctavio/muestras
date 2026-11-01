@@ -1,0 +1,14 @@
+kite|kitesurfing
+kite|kitesurf Buenos Aires
+kite|kiteboarding beach
+remo|Tigre remo
+remo|rowing scull river
+remo|Tigre Buenos Aires rowing club
+kayak|kayak Tigre delta
+kayak|Delta del Paraná kayak
+kayak|kayaking river forest
+caballo|equitación
+caballo|horse riding countryside
+caballo|horse rider gallop field
+delta|Río Luján Tigre
+delta|Delta del Tigre
