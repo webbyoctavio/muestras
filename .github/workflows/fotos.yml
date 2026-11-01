@@ -1,0 +1,31 @@
+name: fotos-tmp
+on:
+  push:
+    branches: [fotos-tmp]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fotos-tmp
+      - name: Descargar fotos
+        run: |
+          mkdir -p tmp-fotos
+          if [ -f urls.txt ]; then
+            while IFS=' ' read -r name url; do
+              [ -z "$name" ] && continue
+              [ -f "tmp-fotos/$name.jpg" ] && continue
+              curl -sSL --retry 3 --max-time 60 -o "tmp-fotos/$name.jpg" "$url" || echo "fallo $name"
+            done < urls.txt
+          fi
+          ls tmp-fotos | wc -l
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
+          git add tmp-fotos
+          git commit -m "Fotos descargadas" || echo "nada nuevo"
+          git push origin HEAD:fotos-tmp
