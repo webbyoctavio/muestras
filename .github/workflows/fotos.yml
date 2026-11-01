@@ -14,7 +14,7 @@ jobs:
       - name: Buscar y descargar
         run: |
           python3 -m pip install -q --break-system-packages pillow || sudo apt-get install -y python3-pil
-          python3 .github/scripts/full.py
+          bash .github/scripts/probar.sh
           find tmp-fotos -type f | wc -l
           du -sh tmp-fotos
       - name: Guardar
