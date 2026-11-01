@@ -1,0 +1,8 @@
+remeras|shirt;tshirt;hoodie;apparel;clothes rack;fabric;printing;ink
+calzado|cobbler;leather craft;leatherworking;shoe shine;boots
+bici|bike mechanic;bicycle repair;bike shop;tools
+luthier|woodworking;carpenter;workshop tools;guitar strings
+libros|old books;library;paper;craft
+motos|garage;mechanic;wrench;tools;engine
+remo|rowing;rowers;oars;canoe
+tango|tango;ballroom;dance shoes;couple dance
