@@ -1,0 +1,50 @@
+kite|kitesurfing
+kite2|kiteboarding
+vela|sailboat sails
+vela2|sail repair
+remo|rowing scull river
+kayak|kayaking river
+nautica|boats marina river
+pesca|fishing tackle
+pesca2|fishing rod river
+caballo|horse riding lesson
+caballo2|equestrian arena
+cactus|cactus succulents
+bonsai|bonsai tree
+jardin|garden center plants
+flores|florist bouquet
+ceramica|pottery wheel
+ceramica2|ceramic studio
+marcos|picture framing
+marcos2|gallery wall frames
+tapiceria|car interior leather seats
+tapiceria2|classic car interior
+antiguedades|antique shop
+vintage|vintage turntable
+vintage2|vinyl records hifi
+luthier|luthier
+luthier2|guitar workshop
+cerrajeria|keys locksmith
+cerrajeria2|door lock key
+bebe|newborn baby photography
+tango|tango dance
+lanas|yarn wool
+lanas2|knitting
+remeras|screen printing
+remeras2|t-shirt print
+calzado|shoe repair
+calzado2|leather shoes workshop
+motos|motorcycle mechanic
+motos2|motorcycle garage
+bici|bicycle repair
+bici2|bike shop
+torta|cake pastry
+torta2|decorated cake
+picada|charcuterie board
+picada2|cheese salami
+reloj|watchmaker
+reloj2|antique clocks
+libros|bookbinding
+libros2|leather notebook
+coser|sewing machine
+coser2|sewing tailor
