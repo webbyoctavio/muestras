@@ -1,7 +1,8 @@
 # Muestras
 
-Propuestas de diseño web para negocios de zona norte (San Miguel, Muñiz, Bella Vista, José C. Paz
-y otros partidos) y para locales gastronómicos de Capital Federal.
+Propuestas de diseño web para negocios de zona norte (San Miguel, Muñiz, Bella Vista, José C. Paz,
+San Isidro, Vicente López, San Fernando, Tigre, Pilar, Escobar y otros partidos) y para locales
+gastronómicos de Capital Federal.
 Cada carpeta es una web de muestra para un local. No son las webs oficiales de los negocios.
 
 Sitio publicado con GitHub Pages: https://webbyoctavio.github.io/muestras/
@@ -56,6 +57,57 @@ Ninguno tiene sitio web cargado en Google Maps (ni siquiera un Instagram como we
 | Tecnobici | Bicicletería | Olivos (Vicente López) | [tecnobici/](https://webbyoctavio.github.io/muestras/tecnobici/) |
 | Encuadernación Artesanal | Encuadernación artesanal y comercial | Vicente López (Vicente López) | [encuadernacion-zona-norte/](https://webbyoctavio.github.io/muestras/encuadernacion-zona-norte/) |
 | Tapicería Gutiérrez | Tapicería del automóvil | Vicente López (Vicente López) | [tapiceria-gutierrez/](https://webbyoctavio.github.io/muestras/tapiceria-gutierrez/) |
+
+## Zona norte II: muestras con herramientas interactivas (noviembre 2026)
+
+30 muestras para comercios y servicios de San Isidro, Vicente López, San Fernando, Tigre, Pilar y Escobar.
+Cada una tiene una identidad visual propia y al menos dos herramientas que funcionan de verdad en el navegador:
+cotizadores, calculadoras, turnos o reservas que arman el mensaje de WhatsApp, buscadores con filtros,
+probadores visuales (armazones, telas, uñas, trajes, rejas) y modos claro/oscuro.
+
+- Dirección, teléfono, horarios y puntaje salen de la ficha pública de Google Maps de cada negocio (noviembre 2026).
+  No encontramos web propia buscando su nombre en internet; antes de escribirles conviene confirmar en la ficha
+  de Maps que no tengan cargado un botón "Sitio web".
+- Servicios, precios y valores de las calculadoras son de ejemplo.
+- Las fotos nuevas son de Unsplash (licencia Unsplash) y están en `img/zn/` con una versión `-sm` para celular;
+  la lista de fotos por muestra está en `img/zn/creditos-zona-norte-2.txt`. Algunas muestras gastronómicas
+  reusan fotos que ya estaban en `img/`.
+- Los mapas de Google, el mapa de Las Marías (Leaflet + OpenStreetMap) y el pronóstico de Petit (Open-Meteo)
+  se cargan solo cuando la página está online.
+- `img/og/` tiene la imagen que muestra WhatsApp al compartir cada link. Todas las páginas llevan `noindex`.
+
+| Negocio | Rubro | Localidad | Muestra |
+|---|---|---|---|
+| Arreglá tu Ropa | Arreglos de ropa y costura | Martínez (San Isidro) | [arregla-tu-ropa/](https://webbyoctavio.github.io/muestras/arregla-tu-ropa/) |
+| Neuropecs | Juguetería didáctica | San Isidro (San Isidro) | [neuropecs/](https://webbyoctavio.github.io/muestras/neuropecs/) |
+| Almacén de Piedras | Piedras, collares y regalos | San Isidro (San Isidro) | [almacen-de-piedras/](https://webbyoctavio.github.io/muestras/almacen-de-piedras/) |
+| Lucía Mobilio | Cosmetología y cuidado de la piel | San Isidro (San Isidro) | [lucia-mobilio/](https://webbyoctavio.github.io/muestras/lucia-mobilio/) |
+| Ladislao | Vinoteca y tienda de bebidas | Martínez (San Isidro) | [ladislao-vinoteca/](https://webbyoctavio.github.io/muestras/ladislao-vinoteca/) |
+| Universo Óptico | Óptica | Vicente López (Vicente López) | [universo-optico/](https://webbyoctavio.github.io/muestras/universo-optico/) |
+| Pastas Frescas Paz | Fábrica de pastas frescas | Olivos (Vicente López) | [pastas-frescas-paz/](https://webbyoctavio.github.io/muestras/pastas-frescas-paz/) |
+| Rincón Café | Café de especialidad y cowork | Vicente López (Vicente López) | [rincon-cafe/](https://webbyoctavio.github.io/muestras/rincon-cafe/) |
+| Sin Gluten Olivos | Panadería y rotisería sin TACC | Olivos (Vicente López) | [sin-gluten-olivos/](https://webbyoctavio.github.io/muestras/sin-gluten-olivos/) |
+| Decoco | Restauración de muebles | Florida (Vicente López) | [decoco-taller/](https://webbyoctavio.github.io/muestras/decoco-taller/) |
+| Antigua Marmolería | Marmolería: mesadas de mármol, granito y cuarzo | San Fernando (San Fernando) | [antigua-marmoleria/](https://webbyoctavio.github.io/muestras/antigua-marmoleria/) |
+| La Unión | Bodegón cervecero | Virreyes (San Fernando) | [la-union-bodegon/](https://webbyoctavio.github.io/muestras/la-union-bodegon/) |
+| Gráfica Coronel | Imprenta, copias e impresiones | San Fernando (San Fernando) | [grafica-coronel/](https://webbyoctavio.github.io/muestras/grafica-coronel/) |
+| Crisele Tapizados | Telas para tapicería y tapizados | San Fernando (San Fernando) | [crisele-tapizados/](https://webbyoctavio.github.io/muestras/crisele-tapizados/) |
+| Uniformes Libertador | Uniformes escolares | San Fernando (San Fernando) | [uniformes-libertador/](https://webbyoctavio.github.io/muestras/uniformes-libertador/) |
+| Petit | Pastelería, brunch y café | Tigre (Tigre) | [petit-tigre/](https://webbyoctavio.github.io/muestras/petit-tigre/) |
+| Boutique de Globos | Globos con helio y decoración de fiestas | Tigre (Tigre) | [globos-tigre/](https://webbyoctavio.github.io/muestras/globos-tigre/) |
+| Muebles Furst | Muebles de madera maciza a medida | Tigre (Tigre) | [muebles-furst/](https://webbyoctavio.github.io/muestras/muebles-furst/) |
+| Juana Chocolate | Chocolatería artesanal y casa de té | Tigre (Tigre) | [juana-chocolate/](https://webbyoctavio.github.io/muestras/juana-chocolate/) |
+| Safari Delta | Paseos en lancha por el Delta | Tigre (Tigre) | [safari-delta/](https://webbyoctavio.github.io/muestras/safari-delta/) |
+| Refrigeración Marcelo | Service de heladeras, freezers y lavarropas | La Lonja (Pilar) | [refrigeracion-marcelo/](https://webbyoctavio.github.io/muestras/refrigeracion-marcelo/) |
+| Aqapools | Construcción, remodelación y equipamiento de piletas | Pilar (Pilar) | [aqapools/](https://webbyoctavio.github.io/muestras/aqapools/) |
+| Verde Pilar | Guardería y hotel canino | Pilar (Pilar) | [verde-pilar/](https://webbyoctavio.github.io/muestras/verde-pilar/) |
+| Fisiospot | Kinesiología y rehabilitación | Pilar (Pilar) | [fisiospot-pilar/](https://webbyoctavio.github.io/muestras/fisiospot-pilar/) |
+| Talabartería Inglesa | Talabartería y artículos de equitación | Pilar (Pilar) | [talabarteria-inglesa/](https://webbyoctavio.github.io/muestras/talabarteria-inglesa/) |
+| Las Marías | Parrilla y bodegón | Belén de Escobar (Escobar) | [las-marias-escobar/](https://webbyoctavio.github.io/muestras/las-marias-escobar/) |
+| Heladería Escobar | Heladería artesanal | Belén de Escobar (Escobar) | [heladeria-escobar/](https://webbyoctavio.github.io/muestras/heladeria-escobar/) |
+| Herrería Moschetti | Herrería y soldaduras | Belén de Escobar (Escobar) | [herreria-moschetti/](https://webbyoctavio.github.io/muestras/herreria-moschetti/) |
+| 2 Leyendas | Indumentaria para hombre y mujer y regalos | Belén de Escobar (Escobar) | [dos-leyendas/](https://webbyoctavio.github.io/muestras/dos-leyendas/) |
+| Nani Estética | Centro de estética | Belén de Escobar (Escobar) | [nani-estetica/](https://webbyoctavio.github.io/muestras/nani-estetica/) |
 
 ## Capital Federal (gastronomía)
 

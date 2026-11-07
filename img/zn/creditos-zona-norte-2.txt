@@ -1,0 +1,126 @@
+Fotos de Unsplash (https://unsplash.com/license) usadas en las muestras de "Zona norte II".
+Cada línea: carpeta de la muestra y las fotos de origen, en el orden de los archivos <muestra>-1, -2, -3...
+
+arregla-tu-ropa:
+  1. https://images.unsplash.com/photo-1718184021018-d2158af6b321
+  2. https://images.unsplash.com/photo-1497997092403-f091fcf5b6c4
+  3. https://images.unsplash.com/photo-1786276479250-e5840e89742e
+  4. https://images.unsplash.com/photo-1536867520774-5b4f2628a69b
+neuropecs:
+  1. https://images.unsplash.com/photo-1777351396220-9a3801de44df
+  2. https://images.unsplash.com/photo-1774464593838-85b320eb7453
+  3. https://images.unsplash.com/photo-1777351395942-96046820ddc6
+  4. https://images.unsplash.com/photo-1611957082141-c449bb2b4ada
+  5. https://images.unsplash.com/photo-1536293182766-c9c0c4133b55
+almacen-de-piedras:
+  1. https://images.unsplash.com/photo-1585383234137-2367d3c5302d
+  2. https://images.unsplash.com/photo-1621329109234-d7657d2f3846
+  3. https://images.unsplash.com/photo-1551947391-249dcb8ed976
+  4. https://images.unsplash.com/photo-1625479610681-f789345a8157
+  5. https://images.unsplash.com/photo-1613843351058-1dd06fda7c02
+lucia-mobilio:
+  1. https://images.unsplash.com/photo-1616394584738-fc6e612e71b9
+  2. https://images.unsplash.com/photo-1552693673-1bf958298935
+  3. https://images.unsplash.com/photo-1570172619644-dfd03ed5d881
+  4. https://images.unsplash.com/photo-1761718209835-c8586b7dcac0
+ladislao-vinoteca:
+  1. https://images.unsplash.com/photo-1568213816046-0ee1c42bd559
+  2. https://images.unsplash.com/photo-1695605302837-5a2a2f722f1a
+  3. https://images.unsplash.com/photo-1558670426-931963635470
+  4. https://images.unsplash.com/photo-1560074152-1f41e1015a1f
+universo-optico:
+  1. https://images.unsplash.com/photo-1517948430535-1e2469d314fe
+  2. https://images.unsplash.com/photo-1534078477103-9f6a18b3a5e2
+  3. https://images.unsplash.com/photo-1603578119639-798b8413d8d7
+  4. https://images.unsplash.com/photo-1760446032123-f66e0c7a005b
+  5. https://images.unsplash.com/photo-1574258495973-f010dfbb5371
+decoco-taller:
+  1. https://images.unsplash.com/photo-1544691560-fc2053d97726
+  2. https://images.unsplash.com/photo-1763337925283-9ed80c77bb6e
+  3. https://images.unsplash.com/photo-1577176434922-803273eba97a
+  4. https://images.unsplash.com/photo-1715249891485-4b8e66b584dc
+antigua-marmoleria:
+  1. https://images.unsplash.com/photo-1556911220-bff31c812dba
+  2. https://images.unsplash.com/photo-1609347744403-2306e8a9ae27
+  3. https://images.unsplash.com/photo-1556912173-46c336c7fd55
+  4. https://images.unsplash.com/photo-1565538810643-b5bdb714032a
+  5. https://images.unsplash.com/photo-1566041510394-cf7c8fe21800
+  6. https://images.unsplash.com/photo-1550053808-52a75a05955d
+  7. https://images.unsplash.com/photo-1558346648-9757f2fa4474
+la-union-bodegon:
+  1. https://images.unsplash.com/photo-1761427097572-25d7d64fe42b
+  2. https://images.unsplash.com/photo-1777558578003-e65755409d8e
+  3. https://images.unsplash.com/photo-1600788886242-5c96aabe3757
+grafica-coronel:
+  1. https://images.unsplash.com/photo-1581079289196-67865ea83118
+  2. https://images.unsplash.com/photo-1503694978374-8a2fa686963a
+  3. https://images.unsplash.com/photo-1777652918753-d66882b15391
+  4. https://images.unsplash.com/photo-1718670013921-2f144aba173a
+  5. https://images.unsplash.com/photo-1715154470884-1c2be0b0129f
+crisele-tapizados:
+  1. https://images.unsplash.com/photo-1718116325027-1928c85a10c3
+  2. https://images.unsplash.com/photo-1590251024078-8a6d9f90b02d
+  3. https://images.unsplash.com/photo-1517858818796-d31fc694c92a
+  4. https://images.unsplash.com/photo-1581325368274-24798f7da015
+  5. https://images.unsplash.com/photo-1769142218868-a7c6d52c197e
+uniformes-libertador:
+  1. https://images.unsplash.com/photo-1700659392887-0a026c53f8e2
+  2. https://images.unsplash.com/photo-1716951865304-e9567c6649e4
+  3. https://images.unsplash.com/photo-1602810316693-3667c854239a
+  4. https://images.unsplash.com/photo-1623658580851-3b25bf83b4ea
+globos-tigre:
+  1. https://images.unsplash.com/photo-1777120032206-7094d3ef151f
+  2. https://images.unsplash.com/photo-1530103862676-de8c9debad1d
+  3. https://images.unsplash.com/photo-1509909756405-be0199881695
+  4. https://images.unsplash.com/photo-1550850395-c17a8e90ad0a
+  5. https://images.unsplash.com/photo-1572355286138-8dae8e7ba20d
+muebles-furst:
+  1. https://images.unsplash.com/photo-1636138388621-258a72ecb07e
+  2. https://images.unsplash.com/photo-1758977403865-f79e156415b3
+  3. https://images.unsplash.com/photo-1585128903994-9788298932a6
+  4. https://images.unsplash.com/photo-1694830470410-2339a679c942
+juana-chocolate:
+  1. https://images.unsplash.com/photo-1644607697034-ce85b7eb6e39
+  2. https://images.unsplash.com/photo-1639158924965-7be3bb57506b
+  3. https://images.unsplash.com/photo-1775201630951-665651af1747
+  4. https://images.unsplash.com/photo-1787788629720-b3dd15e0d8ae
+  5. https://images.unsplash.com/photo-1549007994-cb92caebd54b
+refrigeracion-marcelo:
+  1. https://images.unsplash.com/photo-1588854337115-1c67d9247e4d
+  2. https://images.unsplash.com/photo-1632923565835-6582b54f2105
+  3. https://images.unsplash.com/photo-1484154218962-a197022b5858
+aqapools:
+  1. https://images.unsplash.com/photo-1784407379809-79d04ed0bfff
+  2. https://images.unsplash.com/photo-1613152184920-bc1c4ab7fd1d
+  3. https://images.unsplash.com/photo-1771317778033-3473a576c5e9
+  4. https://images.unsplash.com/photo-1687160954681-230591e7b494
+verde-pilar:
+  1. https://images.unsplash.com/photo-1534361960057-19889db9621e
+  2. https://images.unsplash.com/photo-1760530327971-f8523426c60a
+  3. https://images.unsplash.com/photo-1589756695365-4e0915b3a246
+  4. https://images.unsplash.com/photo-1761591045431-15d254a762b3
+fisiospot-pilar:
+  1. https://images.unsplash.com/photo-1649751361457-01d3a696c7e6
+  2. https://images.unsplash.com/photo-1645005513713-9e2b92a687d3
+  3. https://images.unsplash.com/photo-1772122028843-9139d23af4fb
+  4. https://images.unsplash.com/photo-1519824145371-296894a0daa9
+talabarteria-inglesa:
+  1. https://images.unsplash.com/photo-1580402270466-d8f480901e8c
+  2. https://images.unsplash.com/photo-1629366796462-37058d014473
+  3. https://images.unsplash.com/photo-1765987461484-b6955f722973
+  4. https://images.unsplash.com/photo-1667155229424-144ce3d64906
+herreria-moschetti:
+  1. https://images.unsplash.com/photo-1455165814004-1126a7199f9b
+  2. https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1
+  3. https://images.unsplash.com/photo-1564182998523-6923112e7d6b
+  4. https://images.unsplash.com/photo-1683470157212-cd4005549fce
+dos-leyendas:
+  1. https://images.unsplash.com/photo-1600091166971-7f9faad6c1e2
+  2. https://images.unsplash.com/photo-1491336477066-31156b5e4f35
+  3. https://images.unsplash.com/photo-1611937663641-5cef5189d71b
+  4. https://images.unsplash.com/photo-1507679799987-c73779587ccf
+nani-estetica:
+  1. https://images.unsplash.com/photo-1632345031435-8727f6897d53
+  2. https://images.unsplash.com/photo-1713085085470-fba013d67e65
+  3. https://images.unsplash.com/photo-1630843599725-32ead7671867
+  4. https://images.unsplash.com/photo-1607779097040-26e80aa78e66

@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="es-AR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Las Marías · Parrilla y bodegón en Escobar, cerca de Temaikèn</title>
+<meta name="description" content="Parrilla y bodegón familiar en Escobar, a metros de Temaikèn. Calculá tu parrillada y mirá cómo llegar desde el parque.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f7efe4">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="Las Marías · Vista previa de sitio web">
+<meta property="og:description" content="Parrilla y bodegón familiar en Escobar, a metros de Temaikèn. Calculá tu parrillada y mirá cómo llegar desde el parque.">
+<meta property="og:url" content="https://webbyoctavio.github.io/muestras/las-marias-escobar/">
+<meta property="og:image" content="https://webbyoctavio.github.io/muestras/img/og/las-marias-escobar.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://webbyoctavio.github.io/muestras/las-marias-escobar/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22none%22%20stroke=%22%23c2410c%22%20stroke-width=%222%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22%3E%3Cpath%20d=%22M3%209h18l-2%206H5z%22/%3E%3Cpath%20d=%22M7%2015l-2%206M17%2015l2%206M8%209V7M12%209V5M16%209V7%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bevan&family=Archivo+Narrow:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:var(--fs,17px);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-weight:var(--body-w,400);transition:background .35s,color .35s}
+img,svg,video,canvas{max-width:100%;display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:var(--display-w,700);letter-spacing:var(--display-track,0);line-height:var(--display-lh,1.05);text-wrap:balance;text-transform:var(--display-case,none)}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+::selection{background:var(--accent);color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--focus,var(--accent));outline-offset:3px;border-radius:4px}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{width:100%;max-width:var(--maxw,1180px);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:640px){.wrap{padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}}
+.sec{padding-block:clamp(60px,9vw,118px);position:relative}
+[id]{scroll-margin-top:84px}
+.h2{font-size:clamp(32px,4.6vw,var(--h2-max,58px))}
+.h3{font-size:clamp(21px,2.1vw,26px);line-height:1.18}
+.lead{font-size:clamp(17px,1.45vw,20px);color:var(--muted);max-width:60ch}
+.muted{color:var(--muted)}
+.kicker{font-size:13.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:650;color:var(--accent-2,var(--accent));margin-bottom:14px;display:inline-flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:22px;height:2px;background:currentColor;border-radius:2px}
+.sec-head{display:grid;gap:14px;margin-bottom:clamp(30px,4vw,52px);max-width:760px}
+.sec-head.center{margin-inline:auto;text-align:center;justify-items:center}
+.alt{background:var(--bg-2)}
+.dark{background:var(--sig-bg,#151515);color:var(--sig-ink,#f4f4f4);--bg:var(--sig-bg,#151515);--ink:var(--sig-ink,#f4f4f4);--muted:color-mix(in srgb,var(--sig-ink,#f4f4f4) 70%,transparent);--line:color-mix(in srgb,var(--sig-ink,#fff) 16%,transparent);--surface:color-mix(in srgb,var(--sig-ink,#fff) 7%,transparent)}
+.dark .kicker{color:var(--sig-accent,var(--accent))}
+.demo-bar{background:#1d1d1f;color:#f2f2f2;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:13px;position:relative;z-index:60}
+.demo-bar .wrap{display:flex;align-items:center;gap:12px;min-height:38px;padding-block:7px}
+.demo-bar p{flex:1;line-height:1.35}
+.demo-bar b{font-weight:650}
+.demo-bar .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ddc84;margin-right:8px;vertical-align:1px}
+.demo-bar button{background:none;border:0;color:#bbb;cursor:pointer;font-size:16px;padding:4px 6px;line-height:1}
+.demo-bar.hide{display:none}
+.nav{position:sticky;top:0;z-index:50;background:var(--nav-bg,color-mix(in srgb,var(--bg) 86%,transparent));backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .3s,background .3s}
+.nav.scrolled{border-bottom-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:14px;min-height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto;min-width:0}
+.logo .mark{display:grid;place-items:center;width:40px;height:40px;border-radius:var(--logo-radius,12px);background:var(--accent);color:var(--accent-ink);flex:none}
+.logo .mark svg{width:22px;height:22px}
+.logo .lw{display:flex;flex-direction:column;line-height:1;min-width:0}
+.logo .ln{font-family:var(--logo-font,var(--display));font-size:var(--logo-size,21px);font-weight:var(--logo-w,var(--display-w,700));letter-spacing:var(--logo-track,var(--display-track,0));text-transform:var(--logo-case,none);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.logo .ls{font-size:11.5px;color:var(--muted);margin-top:4px;letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-links{display:none;gap:2px}
+.nav-links a{text-decoration:none;font-size:15px;font-weight:550;padding:8px 12px;border-radius:999px;opacity:.85}
+.nav-links a:hover{opacity:1;background:color-mix(in srgb,var(--ink) 7%,transparent)}
+.nav .btn-nav{display:none}
+.icon-btn{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:transparent;cursor:pointer;flex:none}
+.icon-btn svg{width:20px;height:20px}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:18px;height:2px;background:currentColor;border-radius:2px;position:relative;content:""}
+.menu-btn span::before{position:absolute;top:-6px}.menu-btn span::after{position:absolute;top:6px}
+@media (min-width:980px){.nav-links{display:flex}.menu-btn{display:none!important}.nav .btn-nav{display:inline-flex}}
+.drawer{position:fixed;inset:0;z-index:70;background:var(--bg);display:flex;flex-direction:column;gap:6px;padding:76px 24px 32px;transform:translateY(-102%);transition:transform .38s cubic-bezier(.2,.8,.2,1);visibility:hidden}
+.drawer.open{transform:none;visibility:visible}
+.drawer a:not(.btn){font-family:var(--display);font-size:30px;text-decoration:none;padding:10px 0;border-bottom:1px solid var(--line);font-weight:var(--display-w,700)}
+.drawer .btn{margin-top:20px;justify-content:center}
+.drawer .x{position:absolute;top:16px;right:16px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:var(--btn-radius,999px);font-weight:650;font-size:16px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .15s,background .2s,box-shadow .2s,border-color .2s;line-height:1.1;white-space:nowrap}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn-primary{background:var(--cta-bg,var(--accent));color:var(--cta-ink,var(--accent-ink))}
+.btn-primary:hover{box-shadow:0 8px 24px -10px var(--cta-bg,var(--accent))}
+.btn-ghost{border-color:color-mix(in srgb,currentColor 35%,transparent);background:transparent}
+.btn-ghost:hover{border-color:currentColor}
+.btn-light{background:#fff;color:#111}
+.btn-sm{padding:10px 16px;font-size:14.5px}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn[disabled]{opacity:.45;pointer-events:none}
+.status{display:inline-flex;align-items:center;gap:9px;font-size:14.5px;font-weight:600;margin-top:18px}
+.status i{width:9px;height:9px;border-radius:50%;background:#9aa0a6;box-shadow:0 0 0 4px color-mix(in srgb,#9aa0a6 25%,transparent)}
+.status.open i{background:#1fbf6b;box-shadow:0 0 0 4px color-mix(in srgb,#1fbf6b 25%,transparent);animation:pulse 2.4s infinite}
+.status.closed i{background:#e0663d;box-shadow:0 0 0 4px color-mix(in srgb,#e0663d 22%,transparent)}
+@keyframes pulse{50%{box-shadow:0 0 0 7px color-mix(in srgb,#1fbf6b 8%,transparent)}}
+.hero{position:relative;overflow:hidden}
+.hero h1{font-size:clamp(42px,7.4vw,var(--h1-max,96px))}
+.hero .ctx{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;letter-spacing:.04em;margin-bottom:18px;color:var(--accent-2,var(--accent))}
+.hero .lead{margin-top:20px}
+.hero-bleed{min-height:min(88vh,820px);display:flex;align-items:flex-end;color:#fff;--ink:#fff;--muted:rgba(255,255,255,.84)}
+.hero-bleed .bg{position:absolute;inset:0}
+.hero-bleed .bg img{width:100%;height:100%;object-fit:cover}
+.hero-bleed .bg::after{content:"";position:absolute;inset:0;background:var(--hero-shade,linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.25) 40%,rgba(0,0,0,.72) 100%))}
+.hero-bleed .wrap{position:relative;padding-block:120px 64px}
+.hero-bleed .ctx{color:var(--hero-ctx,#fff)}
+.hero-bleed .btn-ghost{color:#fff}
+.hero-bleed .hero-text{max-width:820px}
+.hero-split .wrap{display:grid;gap:36px;padding-block:clamp(36px,6vw,80px) clamp(56px,8vw,96px);align-items:center}
+.hero-split .ph{position:relative;border-radius:var(--img-radius,24px);overflow:hidden;aspect-ratio:4/5;box-shadow:var(--img-shadow,none)}
+.hero-split .ph img{width:100%;height:100%;object-fit:cover}
+@media (min-width:900px){.hero-split .wrap{grid-template-columns:1.08fr .92fr;gap:56px}}
+.hero-arch .ph{border-radius:999px 999px var(--img-radius,24px) var(--img-radius,24px)!important}
+.hero-poster .wrap{padding-block:clamp(40px,7vw,96px) 0}
+.hero-poster h1{font-size:clamp(52px,11vw,var(--h1-max,150px));line-height:.92}
+.hero-poster .strip{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-top:clamp(32px,5vw,56px)}
+.hero-poster .strip img{width:100%;height:clamp(180px,30vw,380px);object-fit:cover;border-radius:var(--img-radius,18px)}
+@media (max-width:640px){.hero-poster .strip{grid-template-columns:1fr 1fr}.hero-poster .strip img:first-child{grid-column:1/-1}}
+.hero-poster .top{display:grid;gap:24px}
+@media (min-width:900px){.hero-poster .top{grid-template-columns:1.5fr 1fr;align-items:end}}
+.intro{display:grid;gap:36px}
+.intro .big{font-family:var(--display);font-size:clamp(26px,3.3vw,42px);line-height:1.2;font-weight:var(--display-w,700);letter-spacing:var(--display-track,0);text-wrap:balance}
+@media (min-width:900px){.intro{grid-template-columns:1.25fr 1fr;gap:72px;align-items:start}}
+.facts{display:grid;gap:14px;margin-top:22px}
+.facts li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+.facts svg{width:21px;height:21px;flex:none;margin-top:2px;color:var(--accent-2,var(--accent))}
+.stars{--p:100%;display:inline-block;width:78px;height:14px;vertical-align:-1px;margin-right:6px;background:linear-gradient(90deg,#f5b301 var(--p),color-mix(in srgb,var(--ink) 22%,transparent) var(--p));-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 78 14'%3E%3Cg%3E%3Cpath d='M7 0l2 4.6 5 .5-3.8 3.3 1.1 4.9L7 10.8 2.7 13.3l1.1-4.9L0 5.1l5-.5z'/%3E%3Cpath transform='translate(16 0)' d='M7 0l2 4.6 5 .5-3.8 3.3 1.1 4.9L7 10.8 2.7 13.3l1.1-4.9L0 5.1l5-.5z'/%3E%3Cpath transform='translate(32 0)' d='M7 0l2 4.6 5 .5-3.8 3.3 1.1 4.9L7 10.8 2.7 13.3l1.1-4.9L0 5.1l5-.5z'/%3E%3Cpath transform='translate(48 0)' d='M7 0l2 4.6 5 .5-3.8 3.3 1.1 4.9L7 10.8 2.7 13.3l1.1-4.9L0 5.1l5-.5z'/%3E%3Cpath transform='translate(64 0)' d='M7 0l2 4.6 5 .5-3.8 3.3 1.1 4.9L7 10.8 2.7 13.3l1.1-4.9L0 5.1l5-.5z'/%3E%3C/g%3E%3C/svg%3E") center/78px 14px no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 78 14'%3E%3Cg%3E%3Cpath d='M7 0l2 4.6 5 .5-3.8 3.3 1.1 4.9L7 10.8 2.7 13.3l1.1-4.9L0 5.1l5-.5z'/%3E%3Cpath transform='translate(16 0)' d='M7 0l2 4.6 5 .5-3.8 3.3 1.1 4.9L7 10.8 2.7 13.3l1.1-4.9L0 5.1l5-.5z'/%3E%3Cpath transform='translate(32 0)' d='M7 0l2 4.6 5 .5-3.8 3.3 1.1 4.9L7 10.8 2.7 13.3l1.1-4.9L0 5.1l5-.5z'/%3E%3Cpath transform='translate(48 0)' d='M7 0l2 4.6 5 .5-3.8 3.3 1.1 4.9L7 10.8 2.7 13.3l1.1-4.9L0 5.1l5-.5z'/%3E%3Cpath transform='translate(64 0)' d='M7 0l2 4.6 5 .5-3.8 3.3 1.1 4.9L7 10.8 2.7 13.3l1.1-4.9L0 5.1l5-.5z'/%3E%3C/g%3E%3C/svg%3E") center/78px 14px no-repeat}
+.svc-grid{display:grid;gap:16px}
+@media (min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1000px){.svc-grid.c3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius,20px);padding:24px}
+.svc-card .ic{display:grid;place-items:center;width:46px;height:46px;border-radius:var(--ic-radius,14px);background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent-2,var(--accent));margin-bottom:16px}
+.svc-card .ic svg{width:23px;height:23px}
+.svc-card h3{font-size:21px;margin-bottom:8px;line-height:1.2}
+.svc-card p{color:var(--muted);font-size:15.5px}
+.svc-card .meta{display:inline-block;margin-top:12px;font-size:13px;font-weight:650;color:var(--accent-2,var(--accent));letter-spacing:.02em}
+.svc-list{display:grid;border-top:1px solid var(--line)}
+.svc-list li{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+.svc-list .n{font-family:var(--display);font-size:15px;color:var(--accent-2,var(--accent));font-weight:700;min-width:28px;padding-top:4px}
+.svc-list h3{font-size:clamp(20px,2vw,24px)}
+.svc-list p{grid-column:2;color:var(--muted);font-size:15.5px;max-width:62ch}
+.price-list li{display:flex;align-items:baseline;gap:10px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.price-list .dots{flex:1;border-bottom:1px dotted color-mix(in srgb,var(--ink) 30%,transparent);transform:translateY(-5px)}
+.gal-mosaic{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+.gal-mosaic figure{margin:0;border-radius:var(--img-radius,18px);overflow:hidden;position:relative}
+.gal-mosaic img{width:100%;height:100%;object-fit:cover;aspect-ratio:1;transition:transform .6s}
+.gal-mosaic figure:hover img{transform:scale(1.04)}
+@media (min-width:900px){.gal-mosaic{grid-template-columns:repeat(4,1fr);grid-auto-rows:240px}.gal-mosaic img{aspect-ratio:auto}.gal-mosaic figure:first-child{grid-column:span 2;grid-row:span 2}}
+.gal-strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin}
+.gal-strip figure{margin:0;flex:0 0 min(78%,420px);scroll-snap-align:start;border-radius:var(--img-radius,18px);overflow:hidden}
+.gal-strip img{width:100%;aspect-ratio:4/5;object-fit:cover}
+figcaption{font-size:13px;color:var(--muted);padding-top:8px}
+.wgt{display:grid;gap:28px;grid-template-columns:minmax(0,1fr)}
+.wgt>*{min-width:0}
+@media (min-width:960px){.wgt.two{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius,22px);padding:clamp(20px,3vw,32px)}
+.field{display:grid;gap:8px;margin-bottom:18px}
+.field>label,.field>.lbl{font-size:14px;font-weight:650;letter-spacing:.01em}
+.field small{color:var(--muted);font-size:13px}
+.inp{width:100%;padding:12px 14px;border-radius:var(--inp-radius,12px);border:1.5px solid var(--line);background:var(--bg);font-size:16px;transition:border-color .2s}
+.inp:focus{outline:none;border-color:var(--accent)}
+textarea.inp{min-height:84px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1.5px solid var(--line);background:transparent;border-radius:999px;padding:9px 15px;font-size:14.5px;font-weight:600;cursor:pointer;transition:all .18s;line-height:1.1}
+.chip:hover{border-color:color-mix(in srgb,var(--accent) 60%,transparent)}
+.chip[aria-pressed="true"],.chip.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.seg{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;padding:4px;gap:4px;flex-wrap:wrap}
+.seg button{border:0;background:transparent;border-radius:999px;padding:8px 14px;font-weight:600;font-size:14.5px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+input[type=range]{width:100%;accent-color:var(--accent);height:28px}
+.stepper{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;overflow:hidden}
+.stepper button{width:42px;height:42px;border:0;background:transparent;font-size:20px;cursor:pointer}
+.stepper output{min-width:44px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.result{border-radius:var(--card-radius,18px);padding:20px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 28%,transparent)}
+.result .big{font-family:var(--display);font-size:clamp(30px,4vw,44px);line-height:1.05;font-weight:var(--display-w,700);font-variant-numeric:tabular-nums}
+.result ul{display:grid;gap:6px;margin-top:10px;font-size:15px}
+.note{font-size:12.5px;color:var(--muted);margin-top:12px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.grid2{display:grid;gap:14px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.grid2>*{min-width:0}
+.inp{min-width:0}
+.swatches{display:flex;flex-wrap:wrap;gap:10px}
+.sw{width:42px;height:42px;border-radius:50%;border:2px solid var(--bg);box-shadow:0 0 0 1.5px var(--line);cursor:pointer;transition:transform .15s,box-shadow .15s;padding:0}
+.sw[aria-pressed="true"]{box-shadow:0 0 0 2.5px var(--ink);transform:scale(1.08)}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(74px,1fr));gap:8px}
+.slots button{padding:10px 0;border-radius:10px;border:1.5px solid var(--line);background:transparent;font-weight:650;font-size:14px;cursor:pointer;font-variant-numeric:tabular-nums}
+.slots button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.slots button:disabled{opacity:.35;cursor:not-allowed;text-decoration:line-through}
+.days{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.days button{flex:0 0 auto;min-width:62px;padding:10px 8px;border-radius:14px;border:1.5px solid var(--line);background:transparent;cursor:pointer;display:grid;gap:2px;justify-items:center;font-size:12px;line-height:1.1}
+.days button b{font-size:20px;font-family:var(--display)}
+.days button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.days button:disabled{opacity:.35;cursor:not-allowed}
+.tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.04em;padding:3px 8px;border-radius:999px;background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent-2,var(--accent));text-transform:uppercase}
+.pop{animation:pop .35s cubic-bezier(.2,1.4,.4,1)}
+@keyframes pop{0%{transform:scale(.96);opacity:.4}100%{transform:none;opacity:1}}
+.visit{display:grid;gap:36px}
+@media (min-width:900px){.visit{grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}}
+.addr{font-family:var(--display);font-size:clamp(24px,2.6vw,32px);line-height:1.2;margin-top:18px;font-weight:var(--display-w,700)}
+.addr span{display:block;font-family:var(--body);font-size:16px;color:var(--muted);font-weight:400;margin-top:6px;letter-spacing:0;text-transform:none}
+.hours{width:100%;border-collapse:collapse;margin-top:24px;font-size:15.5px}
+.hours td{padding:9px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.hours tr.today td{font-weight:700;color:var(--accent-2,var(--accent))}
+.map{border-radius:var(--card-radius,22px);overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3;background:var(--bg-2)}
+.map iframe{width:100%;height:100%;border:0;display:block}
+.copy{background:none;border:1px dashed var(--line);border-radius:10px;padding:8px 12px;cursor:pointer;display:inline-flex;gap:8px;align-items:center;font-weight:600;font-size:15px}
+.copy svg{width:16px;height:16px}
+.faq{display:grid;gap:10px;max-width:820px}
+.faq details{border:1px solid var(--line);border-radius:16px;padding:4px 20px;background:var(--surface)}
+.faq summary{cursor:pointer;font-weight:650;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:16px;font-size:17px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:22px;line-height:1;transition:transform .2s;color:var(--accent-2,var(--accent))}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 16px;color:var(--muted)}
+.cta{background:var(--cta-band,var(--accent));color:var(--cta-band-ink,var(--accent-ink));text-align:center}
+.cta h2{font-size:clamp(32px,5vw,60px);max-width:18ch;margin:0 auto 26px}
+.cta p{max-width:52ch;margin:-10px auto 26px;opacity:.9}
+.foot{padding:48px 0 calc(110px + env(safe-area-inset-bottom,0px));font-size:14.5px;border-top:1px solid var(--line)}
+.foot .wrap{display:grid;gap:22px}
+@media (min-width:800px){.foot .wrap{grid-template-columns:1.2fr 1fr 1fr}}
+.foot b{display:block;font-family:var(--display);font-size:20px;margin-bottom:6px}
+.foot a{text-decoration:none;border-bottom:1px solid var(--line)}
+.foot .disc{grid-column:1/-1;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px;line-height:1.55}
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:55;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.45);transition:transform .2s}
+.fab:hover{transform:scale(1.06)}
+.fab svg{width:30px;height:30px}
+.fab::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid #25d366;opacity:0;animation:ring 3.2s 2s infinite}
+@keyframes ring{0%{transform:scale(.85);opacity:.7}70%,100%{transform:scale(1.25);opacity:0}}
+.toast{position:fixed;left:50%;bottom:96px;transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:999px;font-size:14.5px;font-weight:600;opacity:0;pointer-events:none;transition:all .3s;z-index:80;max-width:calc(100vw - 32px);text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+.no-js .rv{opacity:1;transform:none}
+.theme-btn .i-sun{display:none}
+[data-theme="dark"] .theme-btn .i-sun{display:block}
+[data-theme="dark"] .theme-btn .i-moon{display:none}
+.ph-wrap{position:relative}
+.svc-wrap{display:grid;gap:36px}
+.svc-side img{width:100%;border-radius:var(--img-radius,20px);aspect-ratio:4/5;object-fit:cover}
+@media (min-width:900px){.svc-wrap.has-side{grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}.svc-side{position:sticky;top:96px}.svc-wrap:not(.has-side) .svc-list{grid-template-columns:1fr 1fr;column-gap:56px;border-top:0}.svc-wrap:not(.has-side) .svc-list li{border-top:1px solid var(--line);border-bottom:0}}
+.gal-trio{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.gal-trio figure{margin:0;border-radius:var(--img-radius,18px);overflow:hidden}
+.gal-trio img{width:100%;height:100%;object-fit:cover;aspect-ratio:1}
+.gal-trio figure:first-child{grid-column:1/-1}
+.gal-trio figure:first-child img{aspect-ratio:16/9}
+@media (min-width:900px){.gal-trio{grid-template-columns:1.5fr 1fr;grid-template-rows:260px 260px}.gal-trio figure:first-child{grid-column:auto;grid-row:span 2}.gal-trio img,.gal-trio figure:first-child img{aspect-ratio:auto}}
+.wa-preview{white-space:pre-wrap;font-size:14px;background:color-mix(in srgb,#25d366 10%,var(--surface));border:1px solid color-mix(in srgb,#25d366 35%,transparent);border-radius:14px 14px 14px 4px;padding:12px 14px;margin-top:14px;color:var(--ink)}
+.wa-preview:empty{display:none}
+@media (min-width:900px){.gal-mosaic figure:nth-child(4):last-child{grid-column:span 2}}
+[hidden]{display:none!important}
+:root{--bg:#f7efe4;--bg-2:#eedfca;--surface:#fffaf2;--ink:#2a1a12;--muted:#6d5848;--line:color-mix(in srgb,#2a1a12 14%,transparent);--accent:#c2410c;--accent-ink:#fff;--accent-2:#9a3412;--display:Bevan,Georgia,serif;--body:"Archivo Narrow",system-ui,sans-serif;--display-w:400;--display-lh:1.04;--fs:18px;--h1-max:96px;--card-radius:8px;--img-radius:8px;--logo-radius:50%;--btn-radius:8px;--cta-band:#2a1a12;--cta-band-ink:#f7efe4;--sig-bg:#1c120d;--sig-ink:#f7efe4;--sig-accent:#fb923c}
+.hero-bleed{--hero-shade:linear-gradient(180deg,rgba(28,18,13,.15),rgba(28,18,13,.45) 45%,rgba(28,18,13,.9))}
+.hero-bleed .ctx{color:#fdba74}
+.embers{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.embers i{position:absolute;bottom:-10px;width:5px;height:5px;border-radius:50%;background:#fb923c;box-shadow:0 0 8px #fb923c;animation:rise 6s linear infinite;opacity:0}
+@keyframes rise{0%{transform:translateY(0);opacity:0}10%{opacity:1}100%{transform:translate(30px,-80vh);opacity:0}}
+.cuts{display:grid;gap:8px;margin-top:12px}
+.cuts div{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center}
+.cuts .bar{grid-column:1/-1;height:8px;border-radius:8px;background:color-mix(in srgb,var(--accent) 16%,transparent);overflow:hidden}
+.cuts .bar i{display:block;height:100%;background:var(--accent);border-radius:8px;transition:width .4s}
+#lmap{height:360px;border-radius:8px;border:1px solid var(--line);background:#e8e1d4}
+.map-fallback{display:grid;place-items:center;height:100%;text-align:center;padding:24px;color:var(--muted)}
+.leaflet-popup-content{font-family:"Archivo Narrow",sans-serif;font-size:14px}
+
+
+
+</style>
+</head>
+<body class="t-las-marias-escobar">
+<div class="demo-bar"><div class="wrap"><p><span class="dot"></span><b>Vista previa</b>: diseño de muestra para Las Marías. Fotos de stock y textos de ejemplo.</p><button type="button" aria-label="Cerrar aviso">✕</button></div></div>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#top"><span class="mark"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h18l-2 6H5z"/><path d="M7 15l-2 6M17 15l2 6M8 9V7M12 9V5M16 9V7"/></svg></span><span class="lw"><span class="ln">Las Marías</span><span class="ls">Parrilla y bodegón · Escobar</span></span></a>
+  <nav class="nav-links" aria-label="Secciones"><a href="#parrillada">Parrillada</a><a href="#llegar">Desde Temaikèn</a><a href="#servicios">La carta</a><a href="#visitanos">Horarios</a></nav>
+  
+  <a class="btn btn-primary btn-sm btn-nav" href="https://wa.me/5491173671293?text=%C2%A1Hola%20Las%20Mar%C3%ADas%21%20Quer%C3%ADa%20reservar%20una%20mesa." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.25.69-1.44 1.32-1.98 1.36-.51.05-.98.24-3.3-.69-2.79-1.1-4.56-3.97-4.7-4.15-.14-.18-1.13-1.5-1.13-2.86 0-1.36.71-2.03.97-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.78 1.91.85 2.05.07.14.11.3.02.48-.09.18-.14.3-.28.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.18.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.67-.18 1.36z"/></svg>Reservá tu mesa</a>
+  <button class="icon-btn menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+</div></header>
+<div class="drawer" role="dialog" aria-label="Menú">
+  <button class="icon-btn x" type="button" aria-label="Cerrar menú">✕</button>
+  <a href="#parrillada">Parrillada</a><a href="#llegar">Desde Temaikèn</a><a href="#servicios">La carta</a><a href="#visitanos">Horarios</a>
+  <a class="btn btn-primary" href="https://wa.me/5491173671293?text=%C2%A1Hola%20Las%20Mar%C3%ADas%21%20Quer%C3%ADa%20reservar%20una%20mesa." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.25.69-1.44 1.32-1.98 1.36-.51.05-.98.24-3.3-.69-2.79-1.1-4.56-3.97-4.7-4.15-.14-.18-1.13-1.5-1.13-2.86 0-1.36.71-2.03.97-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.78 1.91.85 2.05.07.14.11.3.02.48-.09.18-.14.3-.28.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.18.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.67-.18 1.36z"/></svg>Reservá tu mesa</a>
+</div>
+<main id="top">
+<section class="hero hero-bleed ">
+  <div class="bg"><img class="" src="../img/bife-esparragos.webp" alt="Bife a la parrilla con espárragos" width="1000" height="667" loading="eager" fetchpriority="high" decoding="async"></div>
+  <div class="wrap"><div class="hero-text"><span class="ctx">Escobar · frente al parque</span><h1>Parrilla de barrio, a metros de Temaikèn</h1><p class="lead">Parrilladas abundantes, milanesas con tortilla rellena y la atención de una casa de familia. Ideal para cortar el día en el parque o para el almuerzo del domingo.</p><div class="btn-row"><a class="btn btn-primary" href="https://wa.me/5491173671293?text=%C2%A1Hola%20Las%20Mar%C3%ADas%21%20Quer%C3%ADa%20reservar%20una%20mesa." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.25.69-1.44 1.32-1.98 1.36-.51.05-.98.24-3.3-.69-2.79-1.1-4.56-3.97-4.7-4.15-.14-.18-1.13-1.5-1.13-2.86 0-1.36.71-2.03.97-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.78 1.91.85 2.05.07.14.11.3.02.48-.09.18-.14.3-.28.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.18.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.67-.18 1.36z"/></svg>Reservá tu mesa</a><a class="btn btn-ghost" href="#parrillada">Calculá tu parrillada</a></div><p class="status js-status " data-none="Consultá horarios por WhatsApp"><i></i><span>Horario de atención</span></p></div><div class="embers" aria-hidden="true"><i style="left:8%;animation-delay:0s"></i><i style="left:22%;animation-delay:1.5s"></i><i style="left:37%;animation-delay:3s"></i><i style="left:55%;animation-delay:0.8s"></i><i style="left:68%;animation-delay:2.2s"></i><i style="left:81%;animation-delay:4s"></i><i style="left:92%;animation-delay:1.1s"></i></div></div>
+</section>
+<section class="sec sec-intro " id="nosotros">
+  <div class="wrap intro">
+    <div><p class="big rv">Porciones para compartir, precios que se agradecen y un ambiente de casa.</p></div>
+    <div class="side"><p>Somos un bodegón y parrilla familiar en Escobar. Muchos vienen después de Temaikèn y se van con ganas de volver: la parrillada para dos alcanza de sobra y la milanesa es para cuatro.</p><ul class="facts"><li><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span><a href="https://www.google.com/maps/search/?api=1&amp;query=Las%20Mar%C3%ADas%20Parrilla%20Bodeg%C3%B3n%2C%20Av.%20Sarmiento%201996%2C%20Bel%C3%A9n%20de%20Escobar&amp;query_place_id=ChIJAX-PAABhu5UR4YRSvLvdugw" target="_blank" rel="noopener">Av. Sarmiento 1996</a>, Belén de Escobar · a metros de Temaikèn</span></li><li><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Martes a domingo al mediodía · jueves a sábado también a la noche</span></li><li><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.8-4.4 4.3 1 6.1L12 17l-5.4 2.8 1-6.1L3.2 9.4l6.1-.8z"/></svg><span><span class="stars" style="--p:92.0%" role="img" aria-label="4,6 de 5"></span> 4,6 en Google, 122 reseñas</span></li><li><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 7.3 4.5 4.5 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><span>Ambiente familiar</span></li><li><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3.5"/><path d="M2 5v6M2 8h1M22 5v14"/></svg><span>Porciones abundantes</span></li></ul></div>
+  </div>
+</section>
+<section class="sec sec-w alt" id="parrillada">
+  <div class="wrap"><div class="sec-head "><span class="kicker">Calculadora</span><h2 class="h2 rv">¿Cuánta parrillada piden?</h2><p class="lead">Contanos cuántos son y con cuánta hambre vienen. Te sugerimos la parrillada y los cortes.</p></div><div class="wgt two"><div class="panel"><div class="grid2"><div class="field"><span class="lbl">Adultos</span><div class="stepper" id="pr-a"><button type="button" aria-label="Menos">−</button><output>4</output><button type="button" aria-label="Más">+</button></div></div><div class="field"><span class="lbl">Chicos</span><div class="stepper" id="pr-k"><button type="button" aria-label="Menos">−</button><output>2</output><button type="button" aria-label="Más">+</button></div></div></div>
+<div class="field"><span class="lbl">Hambre</span><div class="seg" id="pr-h"><button type="button" data-v=".85" aria-pressed="false">Poca</button><button type="button" data-v="1" aria-pressed="true">Normal</button><button type="button" data-v="1.2" aria-pressed="false">Venimos de caminar todo Temaikèn</button></div></div>
+<label class="row" style="gap:8px;font-weight:600"><input type="checkbox" id="pr-n" style="width:18px;height:18px;accent-color:var(--accent)"> Sin achuras</label></div>
+<div class="result" aria-live="polite"><span class="tag">Les sugerimos</span><p class="big" id="pr-r" style="margin-top:10px"></p><div class="cuts" id="pr-c"></div><div class="btn-row"><button class="btn btn-primary" type="button" id="pr-send"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.25.69-1.44 1.32-1.98 1.36-.51.05-.98.24-3.3-.69-2.79-1.1-4.56-3.97-4.7-4.15-.14-.18-1.13-1.5-1.13-2.86 0-1.36.71-2.03.97-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.78 1.91.85 2.05.07.14.11.3.02.48-.09.18-.14.3-.28.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.18.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.67-.18 1.36z"/></svg>Reservar mesa</button></div><p class="note">Sugerencia orientativa. La parrillada para dos alcanza para tres personas con poco apetito.</p></div></div></div>
+</section>
+<section class="sec sec-svc " id="servicios">
+  <div class="wrap"><div class="sec-head "><span class="kicker">La carta</span><h2 class="h2 rv">Lo que sale de la parrilla y la cocina</h2></div><div class="svc-wrap has-side"><div class="svc-side"><img class="" src="../img/platos-servidos.webp" alt="Platos servidos en la mesa" width="1800" height="789" loading="lazy" decoding="async"></div><ul class="svc-list"><li><span class="n">01</span><h3>Parrillada</h3><p>Asado, vacío, chorizo, morcilla y pollo, para dos o más. <span class="tag">La estrella</span></p></li><li><span class="n">02</span><h3>Cortes a la parrilla</h3><p>Bife de chorizo, entraña, matambre de cerdo.</p></li><li><span class="n">03</span><h3>Milanesas</h3><p>Con tortilla rellena o papas fritas. Enormes. <span class="tag">Para compartir</span></p></li><li><span class="n">04</span><h3>Minutas y pastas</h3><p>Ñoquis, ravioles y platos del día.</p></li><li><span class="n">05</span><h3>Ensaladas</h3><p>Mixtas, de rúcula y parmesano, completas.</p></li><li><span class="n">06</span><h3>Postres caseros</h3><p>Flan con dulce de leche, budín de pan.</p></li></ul></div></div>
+</section>
+<section class="sec sec-w " id="llegar">
+  <div class="wrap"><div class="sec-head "><span class="kicker">Cómo llegar</span><h2 class="h2 rv">¿Venís de Temaikèn? Estamos al lado</h2><p class="lead">Mirá el mapa: estamos sobre Av. Sarmiento, a metros del parque, y cerca de la estación Escobar.</p></div><div class="wgt two"><div id="lmap" role="region" aria-label="Mapa interactivo"><div class="map-fallback">Cargando mapa…</div></div>
+<div class="panel"><ul style="display:grid;gap:14px" id="lm-list"><li><b>Las Marías</b><br><span class="muted">Av. Sarmiento 1996</span></li><li><b>Temaikèn</b><br><span class="muted" id="lm-d1">A metros, cruzando la avenida</span></li><li><b>Estación Escobar</b> (Mitre ramal Zárate)<br><span class="muted" id="lm-d2"></span></li></ul>
+<div class="btn-row"><a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Las+Marias+Parrilla+Bodegon+Escobar&destination_place_id=ChIJAX-PAABhu5UR4YRSvLvdugw"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cómo llegar</a></div><p class="note">Distancias en línea recta, aproximadas.</p></div></div></div>
+</section>
+<section class="sec sec-gal " aria-label="Fotos">
+  <div class="wrap"><div class="sec-head"><span class="kicker">Fotos</span><h2 class="h2 rv">Para compartir</h2></div><div class="gal-mosaic"><figure><img class="" src="../img/picada.webp" alt="Picada para compartir" width="1024" height="1024" loading="lazy" decoding="async"></figure><figure><img class="" src="../img/mesa-larga.webp" alt="Mesa larga lista para una comida familiar" width="1600" height="1136" loading="lazy" decoding="async"></figure><figure><img class="" src="../img/pollo-grillado.webp" alt="Pollo a la parrilla" width="940" height="900" loading="lazy" decoding="async"></figure><figure><img class="" src="../img/huevos-papas.webp" alt="Plato casero con papas" width="1000" height="667" loading="lazy" decoding="async"></figure></div></div>
+</section>
+<section class="sec sec-visit " id="visitanos">
+  <div class="wrap visit">
+    <div>
+      <span class="kicker">Dónde estamos</span>
+      <h2 class="h2 rv">Visitanos</h2>
+      <p class="addr">Av. Sarmiento 1996<span>Belén de Escobar · a metros de Temaikèn</span></p>
+      <p class="status js-status " data-none="Consultá horarios por WhatsApp"><i></i><span>Horario de atención</span></p>
+      <table class="hours" aria-label="Horarios"><tr data-d="0"><td>Lunes</td><td>Cerrado</td></tr><tr data-d="1"><td>Martes</td><td>11:30 a 16 h</td></tr><tr data-d="2"><td>Miércoles</td><td>11:30 a 16 h</td></tr><tr data-d="3"><td>Jueves</td><td>11:30 a 16 y 20 a 0 h</td></tr><tr data-d="4"><td>Viernes</td><td>12 a 16:30 y 19:30 a 23:30 h</td></tr><tr data-d="5"><td>Sábado</td><td>11:30 a 17 y 19:30 a 1 h</td></tr><tr data-d="6"><td>Domingo</td><td>9 a 17 h</td></tr></table>
+      <div class="btn-row"><a class="btn btn-primary" href="https://wa.me/5491173671293?text=%C2%A1Hola%20Las%20Mar%C3%ADas%21%20Quer%C3%ADa%20reservar%20una%20mesa." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.25.69-1.44 1.32-1.98 1.36-.51.05-.98.24-3.3-.69-2.79-1.1-4.56-3.97-4.7-4.15-.14-.18-1.13-1.5-1.13-2.86 0-1.36.71-2.03.97-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.78 1.91.85 2.05.07.14.11.3.02.48-.09.18-.14.3-.28.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.18.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.67-.18 1.36z"/></svg>Escribinos</a><a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Las%20Mar%C3%ADas%20Parrilla%20Bodeg%C3%B3n%2C%20Av.%20Sarmiento%201996%2C%20Bel%C3%A9n%20de%20Escobar&amp;query_place_id=ChIJAX-PAABhu5UR4YRSvLvdugw" target="_blank" rel="noopener"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cómo llegar</a></div>
+      <p style="margin-top:16px"><button class="copy" type="button" data-copy="11 7367-1293"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>11 7367-1293</button></p>
+    </div>
+    <div class="map" data-map="https://maps.google.com/maps?q=Las%20Mar%C3%ADas%20Parrilla%20Bodeg%C3%B3n%2C%20Av.%20Sarmiento%201996%2C%20Bel%C3%A9n%20de%20Escobar%2C%20Buenos%20Aires&amp;z=16&amp;output=embed" role="region" aria-label="Mapa"></div>
+  </div>
+</section>
+<section class="sec sec-faq" id="preguntas"><div class="wrap"><div class="sec-head"><span class="kicker">Preguntas frecuentes</span><h2 class="h2 rv">Lo que más nos preguntan</h2></div><div class="faq"><details><summary>¿Hay que reservar?</summary><p>Los fines de semana conviene, sobre todo al mediodía. Escribinos y te guardamos la mesa.</p></details><details><summary>¿Abren a la noche?</summary><p>Sí, de jueves a sábado. Al mediodía abrimos de martes a domingo.</p></details><details><summary>¿Las porciones son grandes?</summary><p>Muy. La milanesa con tortilla alcanza para compartir entre varios.</p></details></div></div></section>
+<section class="cta sec "><div class="wrap"><h2>Después del parque, a la parrilla.</h2><a class="btn btn-light" href="https://wa.me/5491173671293?text=%C2%A1Hola%20Las%20Mar%C3%ADas%21%20Quer%C3%ADa%20reservar%20una%20mesa." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.25.69-1.44 1.32-1.98 1.36-.51.05-.98.24-3.3-.69-2.79-1.1-4.56-3.97-4.7-4.15-.14-.18-1.13-1.5-1.13-2.86 0-1.36.71-2.03.97-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.78 1.91.85 2.05.07.14.11.3.02.48-.09.18-.14.3-.28.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.18.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.67-.18 1.36z"/></svg>Reservar mesa</a></div></section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div><b>Las Marías</b>Parrilla y bodegón en Belén de Escobar.</div>
+    <div>Av. Sarmiento 1996<br>Belén de Escobar · a metros de Temaikèn</div>
+    <div><a href="tel:+541173671293">11 7367-1293</a><br><a href="https://www.google.com/maps/search/?api=1&amp;query=Las%20Mar%C3%ADas%20Parrilla%20Bodeg%C3%B3n%2C%20Av.%20Sarmiento%201996%2C%20Bel%C3%A9n%20de%20Escobar&amp;query_place_id=ChIJAX-PAABhu5UR4YRSvLvdugw" target="_blank" rel="noopener">Ver en Google Maps</a></div>
+    <p class="disc">Sitio de muestra hecho por Octavio para mostrarle a Las Marías Parrilla Bodegón cómo podría ser su página. No es el sitio oficial del negocio. Dirección, teléfono, horarios y puntaje tomados de su ficha pública de Google Maps (noviembre de 2026); fotos de stock de uso libre (Unsplash), textos, servicios y valores de ejemplo.</p>
+  </div>
+</footer>
+<a class="fab" href="https://wa.me/5491173671293?text=%C2%A1Hola%20Las%20Mar%C3%ADas%21%20Quer%C3%ADa%20reservar%20una%20mesa." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.25.69-1.44 1.32-1.98 1.36-.51.05-.98.24-3.3-.69-2.79-1.1-4.56-3.97-4.7-4.15-.14-.18-1.13-1.5-1.13-2.86 0-1.36.71-2.03.97-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.78 1.91.85 2.05.07.14.11.3.02.48-.09.18-.14.3-.28.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.18.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.67-.18 1.36z"/></svg></a>
+<script>window.SITE={"slug": "las-marias-escobar", "name": "Las Marías", "wa": "5491173671293", "tel": "+541173671293", "hours": [[], [[690, 960]], [[690, 960]], [[690, 960], [1200, 1440]], [[720, 990], [1170, 1410]], [[690, 1020], [1170, 1500]], [[540, 1020]]], "msg": "¡Hola Las Marías! Quería reservar una mesa."};</script>
+<script>(function(){
+"use strict";
+var S=window.SITE||{};
+var $=function(s,c){return (c||document).querySelector(s)};
+var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+S.$=$;S.$$=$$;
+document.documentElement.classList.remove('no-js');
+
+/* hora de Buenos Aires */
+function baNow(){
+  try{
+    var f=new Intl.DateTimeFormat('en-US',{timeZone:'America/Argentina/Buenos_Aires',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false,year:'numeric',month:'2-digit',day:'2-digit'});
+    var p={};f.formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});
+    var wd={Mon:0,Tue:1,Wed:2,Thu:3,Fri:4,Sat:5,Sun:6}[p.weekday];
+    var h=+p.hour%24;
+    return {d:wd,m:h*60+(+p.minute),y:+p.year,mo:+p.month,da:+p.day};
+  }catch(e){var n=new Date(Date.now()-3*3600e3);return {d:(n.getUTCDay()+6)%7,m:n.getUTCHours()*60+n.getUTCMinutes(),y:n.getUTCFullYear(),mo:n.getUTCMonth()+1,da:n.getUTCDate()}}
+}
+S.baNow=baNow;
+var DAYS=['lunes','martes','miércoles','jueves','viernes','sábado','domingo'];
+S.DAYS=DAYS;
+function hm(m){m=m%1440;var h=Math.floor(m/60),mi=m%60;return h+(mi?':'+(mi<10?'0':'')+mi:'')}
+S.hm=hm;
+S.money=function(n){return '$ '+Math.round(n).toLocaleString('es-AR')};
+S.num=function(n,d){return (+n).toLocaleString('es-AR',{maximumFractionDigits:d==null?1:d,minimumFractionDigits:0})};
+
+/* WhatsApp */
+S.waLink=function(t){
+  var txt=t||S.msg||('¡Hola '+S.name+'! Quería hacer una consulta.');
+  if(S.wa) return 'https://wa.me/'+S.wa+'?text='+encodeURIComponent(txt);
+  return 'tel:'+S.tel;
+};
+S.send=function(t){var u=S.waLink(t);if(u.indexOf('tel:')===0){location.href=u}else{window.open(u,'_blank','noopener')}};
+
+/* aviso breve */
+var toastEl;
+S.toast=function(msg){
+  if(!toastEl){toastEl=document.createElement('div');toastEl.className='toast';toastEl.setAttribute('role','status');document.body.appendChild(toastEl)}
+  toastEl.textContent=msg;toastEl.classList.add('show');
+  clearTimeout(toastEl._t);toastEl._t=setTimeout(function(){toastEl.classList.remove('show')},2600);
+};
+
+/* abierto / cerrado */
+function openNow(H,now){
+  if(!H) return null;
+  var d=now.d,m=now.m,prev=(d+6)%7,i,r;
+  for(i=0;i<(H[d]||[]).length;i++){r=H[d][i];if(m>=r[0]&&m<r[1])return {open:true,close:r[1]}}
+  for(i=0;i<(H[prev]||[]).length;i++){r=H[prev][i];if(r[1]>1440&&m<r[1]-1440)return {open:true,close:r[1]}}
+  return {open:false};
+}
+function nextOpen(H,now){
+  for(var k=0;k<8;k++){
+    var d=(now.d+k)%7,rs=H[d]||[];
+    for(var i=0;i<rs.length;i++){if(k>0||rs[i][0]>now.m)return {k:k,d:d,at:rs[i][0]}}
+  }
+  return null;
+}
+S.isOpen=function(){return openNow(S.hours,baNow())};
+function paintStatus(){
+  var els=$$('.js-status');if(!els.length)return;
+  var now=baNow(),txt,cls;
+  if(!S.hours||!S.hours.some(function(x){return x&&x.length})){
+    els.forEach(function(el){el.className='status js-status';el.querySelector('span').textContent=el.getAttribute('data-none')||'Consultá horarios por WhatsApp'});return;
+  }
+  var o=openNow(S.hours,now);
+  if(o&&o.open){cls='open';txt=(S.openTxt||'Abierto ahora')+' · cierra a las '+hm(o.close)}
+  else{
+    var n=nextOpen(S.hours,now);cls='closed';
+    if(!n)txt='Cerrado';
+    else if(n.k===0)txt='Cerrado · abre hoy a las '+hm(n.at);
+    else if(n.k===1)txt='Cerrado · abre mañana a las '+hm(n.at);
+    else txt='Cerrado · abre el '+DAYS[n.d]+' a las '+hm(n.at);
+  }
+  els.forEach(function(el){el.className='status js-status '+cls;el.querySelector('span').textContent=txt});
+}
+paintStatus();setInterval(paintStatus,60000);
+var t=baNow();$$('.hours tr[data-d="'+t.d+'"]').forEach(function(tr){tr.classList.add('today')});
+
+/* barra de vista previa */
+var db=$('.demo-bar');
+if(db){var b=$('button',db);if(b)b.addEventListener('click',function(){db.classList.add('hide')})}
+
+/* navegación */
+var nav=$('.nav');
+if(nav){var onS=function(){nav.classList.toggle('scrolled',window.scrollY>8)};onS();window.addEventListener('scroll',onS,{passive:true})}
+var dr=$('.drawer'),mb=$('.menu-btn');
+function setDrawer(o){if(!dr)return;dr.classList.toggle('open',o);if(mb)mb.setAttribute('aria-expanded',o?'true':'false');document.body.style.overflow=o?'hidden':''}
+if(mb)mb.addEventListener('click',function(){setDrawer(!dr.classList.contains('open'))});
+if(dr){$$('a',dr).forEach(function(a){a.addEventListener('click',function(){setDrawer(false)})});var x=$('.x',dr);if(x)x.addEventListener('click',function(){setDrawer(false)})}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')setDrawer(false)});
+
+/* modo de color */
+var root=document.documentElement;
+function setTheme(v){if(v)root.setAttribute('data-theme',v);else root.removeAttribute('data-theme');$$('[data-theme-toggle]').forEach(function(b){b.setAttribute('aria-pressed',v==='dark'?'true':'false')});try{localStorage.setItem('theme-'+(S.slug||''),v||'')}catch(e){}}
+S.setTheme=setTheme;
+try{var sv=localStorage.getItem('theme-'+(S.slug||''));if(sv)setTheme(sv)}catch(e){}
+$$('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){
+  var cur=root.getAttribute('data-theme');
+  if(!cur){cur=S.defTheme||((window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches&&S.autoDark)?'dark':'light')}
+  setTheme(cur==='dark'?'light':'dark');
+})});
+
+/* links de WhatsApp con texto propio */
+$$('[data-wa-text]').forEach(function(a){a.setAttribute('href',S.waLink(a.getAttribute('data-wa-text')))});
+
+/* aparición al hacer scroll */
+var rv=$$('.rv');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  rv.forEach(function(el){io.observe(el)});
+}else rv.forEach(function(el){el.classList.add('in')});
+
+/* mapa diferido */
+$$('.map[data-map]').forEach(function(m){
+  var load=function(){if(m.firstChild)return;var f=document.createElement('iframe');f.src=m.getAttribute('data-map');f.loading='lazy';f.title='Mapa de '+S.name;f.referrerPolicy='no-referrer-when-downgrade';m.appendChild(f)};
+  if('IntersectionObserver' in window){var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){load();o.disconnect()}},{rootMargin:'300px'});o.observe(m)}else load();
+});
+
+/* copiar teléfono */
+$$('.copy[data-copy]').forEach(function(b){b.addEventListener('click',function(){
+  var v=b.getAttribute('data-copy');
+  var ok=function(){S.toast('Teléfono copiado')};
+  try{navigator.clipboard.writeText(v).then(ok,function(){S.toast(v)})}catch(e){S.toast(v)}
+})});
+
+/* utilidades para widgets */
+S.press=function(group,btn){$$('[aria-pressed]',group).forEach(function(b){b.setAttribute('aria-pressed',b===btn?'true':'false')})};
+S.single=function(group,cb){$$('button',group).forEach(function(b){b.addEventListener('click',function(){S.press(group,b);cb&&cb(b.getAttribute('data-v'),b)})})};
+S.multi=function(group,cb){$$('button',group).forEach(function(b){b.addEventListener('click',function(){b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');cb&&cb()})})};
+S.vals=function(group){return $$('[aria-pressed="true"]',group).map(function(b){return b.getAttribute('data-v')})};
+S.val=function(group){var b=$('[aria-pressed="true"]',group);return b?b.getAttribute('data-v'):null};
+S.stepper=function(el,min,max,cb){var o=$('output',el),bs=$$('button',el);var get=function(){return +o.value||+o.textContent};
+  bs[0].addEventListener('click',function(){var v=Math.max(min,get()-1);o.value=v;o.textContent=v;cb&&cb(v)});
+  bs[1].addEventListener('click',function(){var v=Math.min(max,get()+1);o.value=v;o.textContent=v;cb&&cb(v)});
+  return get;};
+/* próximos días hábiles para turnos */
+S.nextDays=function(n){var out=[],now=baNow(),base=Date.UTC(now.y,now.mo-1,now.da);
+  for(var i=0;i<n;i++){var dt=new Date(base+i*864e5);out.push({i:i,d:(dt.getUTCDay()+6)%7,day:dt.getUTCDate(),mo:dt.getUTCMonth(),label:i===0?'Hoy':i===1?'Mañana':DAYS[(dt.getUTCDay()+6)%7]})}
+  return out;};
+S.MONTHS=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+S.slotsFor=function(d,step){var rs=(S.hours||[])[d]||[],out=[];rs.forEach(function(r){for(var m=r[0];m+step<=r[1];m+=step)out.push(m)});return out};
+})();
+</script>
+<script>(function(){"use strict";var S=window.SITE,$=S.$,$$=S.$$;
+
+const prA=S.stepper($('#pr-a'),1,30,prRun),prK=S.stepper($('#pr-k'),0,20,prRun);
+function prRun(){const a=prA(),k=prK(),h=+S.val($('#pr-h')),na=$('#pr-n').checked;const g=(a*450+k*220)*h,par=Math.max(1,Math.round(g/1000));
+ $('#pr-r').textContent=`Parrillada para ${par*2} · ${S.num(g/1000,1)} kg`;
+ const cuts=[['Asado',.3],['Vacío',.25],['Chorizo',.15],['Pollo',.15]].concat(na?[]:[['Morcilla',.07],['Mollejas',.08]]);const tot=cuts.reduce((s,c)=>s+c[1],0);
+ $('#pr-c').innerHTML=cuts.map(c=>`<div><span>${c[0]}</span><b>${S.num(g*c[1]/tot/1000,2)} kg</b><span class="bar"><i style="width:${c[1]/tot*100*2.5}%"></i></span></div>`).join('');
+ $('#pr-send').onclick=()=>S.send(`¡Hola! Somos ${a} adultos${k?` y ${k} chicos`:''}. Queremos reservar mesa y pedir parrillada para ${par*2}${na?' sin achuras':''}. ¿Para qué horario hay lugar?`);}
+S.single($('#pr-h'),prRun);$('#pr-n').addEventListener('change',prRun);prRun();
+
+
+const LM=[['Las Marías',-34.3673603,-58.8085458,'#c2410c'],['Temaikèn',-34.3668909,-58.80733,'#15803d'],['Estación Escobar',-34.3496144,-58.7950319,'#1d4ed8']];
+function hav(a,b){const R=6371,dl=(b[1]-a[1])*Math.PI/180,dg=(b[2]-a[2])*Math.PI/180;const x=Math.sin(dl/2)**2+Math.cos(a[1]*Math.PI/180)*Math.cos(b[1]*Math.PI/180)*Math.sin(dg/2)**2;return 2*R*Math.asin(Math.sqrt(x))}
+const d2=hav(LM[0],LM[2]);$('#lm-d2').textContent=`A ${S.num(d2,1)} km (unos ${Math.round(d2*12)} minutos caminando)`;
+function lmInit(){if(!window.L){$('#lmap').innerHTML='<div class="map-fallback">No se pudo cargar el mapa. <a href="https://www.google.com/maps/search/?api=1&query=Las+Marias+Parrilla+Escobar&query_place_id=ChIJAX-PAABhu5UR4YRSvLvdugw" target="_blank" rel="noopener">Abrir en Google Maps</a></div>';return}
+ $('#lmap').innerHTML='';const m=L.map('lmap',{scrollWheelZoom:false}).setView([-34.362,-58.803],14);
+ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'}).addTo(m);
+ LM.forEach(p=>L.circleMarker([p[1],p[2]],{radius:p[0]==='Las Marías'?11:8,color:'#fff',weight:3,fillColor:p[3],fillOpacity:1}).addTo(m).bindPopup('<b>'+p[0]+'</b>'+(p[0]==='Las Marías'?'<br>Av. Sarmiento 1996':'')));
+ L.polyline([[LM[0][1],LM[0][2]],[LM[1][1],LM[1][2]]],{color:'#15803d',dashArray:'6 6'}).addTo(m);L.polyline([[LM[0][1],LM[0][2]],[LM[2][1],LM[2][2]]],{color:'#1d4ed8',dashArray:'6 6',opacity:.6}).addTo(m);
+ m.fitBounds(LM.map(p=>[p[1],p[2]]),{padding:[30,30]});}
+(function(){const io=new IntersectionObserver(es=>{if(!es[0].isIntersecting)return;io.disconnect();const s=document.createElement('script');s.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';s.crossOrigin='';s.onload=lmInit;s.onerror=lmInit;document.head.appendChild(s)},{rootMargin:'300px'});io.observe($('#lmap'))})();
+
+
+})();</script>
+</body>
+</html>
