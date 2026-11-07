@@ -72,6 +72,9 @@ probadores visuales (armazones, telas, uñas, trajes, rejas) y modos claro/oscur
 - Las fotos nuevas son de Unsplash (licencia Unsplash) y están en `img/zn/` con una versión `-sm` para celular;
   la lista de fotos por muestra está en `img/zn/creditos-zona-norte-2.txt`. Algunas muestras gastronómicas
   reusan fotos que ya estaban en `img/`.
+- Diseño compartido: bento grid, superficies de vidrio con desenfoque, sombras con profundidad, entrada
+  escalonada en el hero, elevación y luz que sigue al puntero en tarjetas y botones. Cada muestra conserva
+  su paleta y tipografías propias y sigue siendo un único `index.html`.
 - Los mapas de Google, el mapa de Las Marías (Leaflet + OpenStreetMap) y el pronóstico de Petit (Open-Meteo)
   se cargan solo cuando la página está online.
 - `img/og/` tiene la imagen que muestra WhatsApp al compartir cada link. Todas las páginas llevan `noindex`.
