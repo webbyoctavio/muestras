@@ -1,0 +1,181 @@
+Fotos de Unsplash (https://unsplash.com/license) usadas en las muestras de "Zona norte III".
+Cada línea: carpeta de la muestra y las fotos de origen, en el orden de los archivos <muestra>-1, -2, -3...
+Las muestras que no figuran acá reusan fotos que ya estaban en img/ o en img/zn/ (ver creditos-zona-norte-2.txt).
+
+dance-factory:
+  1. https://images.unsplash.com/photo-1758671916868-b853bc18d031
+  2. https://images.unsplash.com/photo-1758670334659-5a58d87fb8d7
+  3. https://images.unsplash.com/photo-1758671914469-1aa30cc38d1e
+  4. https://images.unsplash.com/photo-1675806528444-75a88ed9c014
+
+estudio-glams:
+  1. https://images.unsplash.com/photo-1779617926288-fde3f7fb7b5d
+  2. https://images.unsplash.com/photo-1675806541088-042a291c8cc9
+  3. https://images.unsplash.com/photo-1630050525402-06c617847d27
+  4. https://images.unsplash.com/photo-1675806536873-b63cec6ce750
+
+bambalinas-arte:
+  1. https://images.unsplash.com/photo-1514306191717-452ec28c7814
+  2. https://images.unsplash.com/photo-1503095396549-807759245b35
+  3. https://images.unsplash.com/photo-1758818035036-5c6a3faf9996
+  4. https://images.unsplash.com/photo-1562329265-95a6d7a83440
+
+gomeria-la-palanca:
+  1. https://images.unsplash.com/photo-1675034743372-672c3c3f8377
+  2. https://images.unsplash.com/photo-1760836395760-9831facb4754
+  3. https://images.unsplash.com/photo-1645445522156-9ac06bc7a767
+  4. https://images.unsplash.com/photo-1601411101851-ea0e07766235
+
+lavautos-gaytan:
+  1. https://images.unsplash.com/photo-1608506375591-b90e1f955e4b
+  2. https://images.unsplash.com/photo-1633014041037-f5446fb4ce99
+  3. https://images.unsplash.com/photo-1607860108855-64acf2078ed9
+  4. https://images.unsplash.com/photo-1732357624591-f2137085659b
+
+doble-filo-barberia:
+  1. https://images.unsplash.com/photo-1599011176306-4a96f1516d4d
+  2. https://images.unsplash.com/photo-1635273051937-a0ddef9573b6
+  3. https://images.unsplash.com/photo-1605497788044-5a32c7078486
+  4. https://images.unsplash.com/photo-1635273051839-003bf06a8751
+
+torcuato-english:
+  1. https://images.unsplash.com/photo-1509062522246-3755977927d7
+  2. https://images.unsplash.com/photo-1524178232363-1fb2b075b655
+  3. https://images.unsplash.com/photo-1543109740-4bdb38fda756
+  4. https://images.unsplash.com/photo-1434030216411-0b793f4b4173
+
+colchones-amalfi:
+  1. https://images.unsplash.com/photo-1506720186575-11354d325017
+  2. https://images.unsplash.com/photo-1647376036543-f9f543601a1d
+  3. https://images.unsplash.com/photo-1759176171441-7afca44a5558
+  4. https://images.unsplash.com/photo-1699942681763-d1da9f692489
+
+delta-heat-yoga:
+  1. https://images.unsplash.com/photo-1787647089633-37e49ee2e054
+  2. https://images.unsplash.com/photo-1761035005546-62b8018b212a
+  3. https://images.unsplash.com/photo-1552196563-55cd4e45efb3
+  4. https://images.unsplash.com/photo-1506126613408-eca07ce68773
+
+ferreteria-chopper:
+  1. https://images.unsplash.com/photo-1759200165738-6366977a73c6
+  2. https://images.unsplash.com/photo-1784847684790-48143d36566e
+  3. https://images.unsplash.com/photo-1602052793312-b99c2a9ee797
+  4. https://images.unsplash.com/photo-1631856954655-966f97d809de
+
+fletes-garin:
+  1. https://images.unsplash.com/photo-1698917414969-feade59e3343
+  2. https://images.unsplash.com/photo-1600518464441-9154a4dea21b
+  3. https://images.unsplash.com/photo-1600725935160-f67ee4f6084a
+  4. https://images.unsplash.com/photo-1714647211902-bb711d643a17
+
+planeta-box:
+  1. https://images.unsplash.com/photo-1623874514711-0f321325f318
+  2. https://images.unsplash.com/photo-1685633225097-10c8f8e6e889
+  3. https://images.unsplash.com/photo-1623874106686-5be2b325c8f1
+  4. https://images.unsplash.com/photo-1674834727149-00812f907676
+
+kung-fu-shaolin-garin:
+  1. https://images.unsplash.com/photo-1514050566906-8d077bae7046
+  2. https://images.unsplash.com/photo-1555597408-26bc8e548a46
+  3. https://images.unsplash.com/photo-1539465386388-838f814495bd
+  4. https://images.unsplash.com/photo-1555597673-b21d5c935865
+
+taller-los-polvorines:
+  1. https://images.unsplash.com/photo-1615906655593-ad0386982a0f
+  2. https://images.unsplash.com/photo-1625047509248-ec889cbff17f
+  3. https://images.unsplash.com/photo-1775590766345-c117265f0c1b
+  4. https://images.unsplash.com/photo-1486262715619-67b85e0b08d3
+
+san-miguel-gas-motor:
+  1. https://images.unsplash.com/photo-1771340012378-3c86cb649193
+  2. https://images.unsplash.com/photo-1771340012319-0b4fca008b54
+  3. https://images.unsplash.com/photo-1771340742493-52fbd5476ccb
+  4. https://images.unsplash.com/photo-1517026575980-3e1e2dedeab4
+
+muzylo-aberturas:
+  1. https://images.unsplash.com/photo-1613324061338-19d4528a5be9
+  2. https://images.unsplash.com/photo-1613244288805-020d7d11c655
+  3. https://images.unsplash.com/photo-1531383339897-f369f6422e40
+  4. https://images.unsplash.com/photo-1572739275114-ec3764ba1477
+
+flikiti:
+  1. https://images.unsplash.com/photo-1759330203240-b89ccee8840f
+  2. https://images.unsplash.com/photo-1764418717252-07342e14d58a
+  3. https://images.unsplash.com/photo-1498940757830-82f7813bf178
+  4. https://images.unsplash.com/photo-1654617188098-14d9deadbba1
+
+mon-temps:
+  1. https://images.unsplash.com/photo-1768508951405-10e83c4a2872
+  2. https://images.unsplash.com/photo-1762765684665-6b6855bb6fe6
+  3. https://images.unsplash.com/photo-1784987609016-f9644a4e1218
+  4. https://images.unsplash.com/photo-1768776183877-e8f3dfc91f40
+
+tienda-melocotona:
+  1. https://images.unsplash.com/photo-1598305762558-328f599df683
+  2. https://images.unsplash.com/photo-1759323321196-2813db509285
+  3. https://images.unsplash.com/photo-1717607424466-b4d26351a765
+  4. https://images.unsplash.com/photo-1777195595983-d9efde4c1223
+
+autoescuela-centro:
+  1. https://images.unsplash.com/photo-1630406144797-821be1f35d75
+  2. https://images.unsplash.com/photo-1578041262130-633307b3bfd6
+  3. https://images.unsplash.com/photo-1764588224022-ef99db06bde0
+  4. https://images.unsplash.com/photo-1773063449875-332dff62b6e3
+
+eamut-musica:
+  1. https://images.unsplash.com/photo-1696522732406-065ef560da8c
+  2. https://images.unsplash.com/photo-1475275166152-f1e8005f9854
+  3. https://images.unsplash.com/photo-1526142684086-7ebd69df27a5
+  4. https://images.unsplash.com/photo-1507838153414-b4b713384a76
+
+nacho-rocca-guitarra:
+  1. https://images.unsplash.com/photo-1471478331149-c72f17e33c73
+  2. https://images.unsplash.com/photo-1510915361894-db8b60106cb1
+  3. https://images.unsplash.com/photo-1593697972672-b1c1902219e4
+
+schaeffer-bier:
+  1. https://images.unsplash.com/photo-1567696911980-2eed69a46042
+  2. https://images.unsplash.com/photo-1766589220698-c150265d4825
+  3. https://images.unsplash.com/photo-1546622891-02c72c1537b6
+
+water-dog:
+  1. https://images.unsplash.com/photo-1581887936036-3f4f7f0b6679
+  2. https://images.unsplash.com/photo-1528846104175-4fd300ee59da
+  3. https://images.unsplash.com/photo-1719464454959-9cf304ef4774
+  4. https://images.unsplash.com/photo-1772437883387-8076cf660c65
+
+el-gato-gordo-petshop:
+  1. https://images.unsplash.com/photo-1611173622933-91942d394b04
+
+veterinaria-upendi:
+  1. https://images.unsplash.com/photo-1770836037289-e00e5f351d11
+  2. https://images.unsplash.com/photo-1770836037793-95bdbf190f71
+  3. https://images.unsplash.com/photo-1725409796872-8b41e8eca929
+  4. https://images.unsplash.com/photo-1770836037275-38b44e4b101f
+
+jv-telefonia:
+  1. https://images.unsplash.com/photo-1550041473-d296a3a8a18a
+  2. https://images.unsplash.com/photo-1676311396794-f14881e9daaa
+  3. https://images.unsplash.com/photo-1721332154191-ba5f1534266e
+  4. https://images.unsplash.com/photo-1563770660941-20978e870e26
+
+pc-tech:
+  1. https://images.unsplash.com/photo-1581092918056-0c4c3acd3789
+  2. https://images.unsplash.com/photo-1604754742629-3e5728249d73
+
+nails-lay:
+  1. https://images.unsplash.com/photo-1589710751893-f9a6770ad71b
+  2. https://images.unsplash.com/photo-1639629509821-c54cdd984227
+
+caritto-studio:
+  1. https://images.unsplash.com/photo-1674049406179-d7bf2c263e71
+
+libreria-las-gemelas:
+  1. https://images.unsplash.com/photo-1565022536102-f7645c84354a
+  2. https://images.unsplash.com/photo-1503676260728-1c00da094a0b
+
+pdf-design-muebles:
+  1. https://images.unsplash.com/photo-1771888703722-ee7ad9143a67
+  2. https://images.unsplash.com/photo-1622372738946-62e02505feb3
+  3. https://images.unsplash.com/photo-1771371282665-545256b20dca
+  4. https://images.unsplash.com/photo-1601760561441-16420502c7e0

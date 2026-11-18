@@ -112,6 +112,87 @@ probadores visuales (armazones, telas, uñas, trajes, rejas) y modos claro/oscur
 | 2 Leyendas | Indumentaria para hombre y mujer y regalos | Belén de Escobar (Escobar) | [dos-leyendas/](https://webbyoctavio.github.io/muestras/dos-leyendas/) |
 | Nani Estética | Centro de estética | Belén de Escobar (Escobar) | [nani-estetica/](https://webbyoctavio.github.io/muestras/nani-estetica/) |
 
+## Zona norte III: 60 muestras firmadas por Nexora Webs (noviembre 2026)
+
+60 muestras más para comercios y servicios de Tigre (Pacheco, El Talar, Don Torcuato, Benavídez), Escobar (Maschwitz, Garín),
+Pilar (Del Viso, Villa Rosa, Manuel Alberti), San Miguel (Bella Vista, Muñiz), Malvinas Argentinas (Tortuguitas, Los Polvorines,
+Grand Bourg), José C. Paz, Vicente López (Munro, Carapachay, Villa Martelli) y San Isidro (Villa Adelina, Boulogne, Beccar).
+Ninguna repite negocios de las tandas anteriores. La barra de aviso y el pie dicen que son muestras hechas por Nexora Webs.
+
+- Mismo diseño que "Zona norte II" (bento grid, vidrio, sombras con profundidad, entrada escalonada) con paleta y tipografías propias por muestra.
+- Cada muestra tiene dos herramientas que funcionan en el navegador y terminan en un mensaje de WhatsApp armado: configuradores visuales
+  en SVG (tortas, cajas de bombones, pizzas, helados, hamburguesas, bowls, sillones, aberturas, cocinas, calcos, acordes de guitarra,
+  la base del tango), cotizadores, pedidos con carrito, turnos con agenda según el horario real, grillas de clases, tests recomendadores,
+  calculadoras, diagnósticos guiados y comparadores antes y después.
+- Dirección, teléfono, horarios y puntaje salen de la ficha pública de Google Maps de cada negocio (noviembre 2026). No encontramos web
+  propia buscando su nombre; antes de escribirles conviene confirmar en la ficha de Maps que no tengan cargado un botón "Sitio web".
+- Servicios, precios y valores de las calculadoras son de ejemplo.
+- Fotos: Unsplash. Las nuevas están en `img/zn/` (lista en `img/zn/creditos-zona-norte-3.txt`); varias muestras reusan fotos de `img/` y `img/zn/`.
+- `img/og/` tiene la imagen para compartir cada link. Todas las páginas llevan `noindex`.
+
+| Negocio | Rubro | Localidad | Herramientas | Muestra |
+|---|---|---|---|---|
+| Aranova Pastelería | Pastelería y catering | General Pacheco (Tigre) | Configurador visual + Calculadora | [aranova-pasteleria/](https://webbyoctavio.github.io/muestras/aranova-pasteleria/) |
+| Bike Shop Pacheco | Bicicletería y taller | General Pacheco (Tigre) | Diagnóstico guiado + Calculadora | [bike-shop-pacheco/](https://webbyoctavio.github.io/muestras/bike-shop-pacheco/) |
+| Florería Decoflor | Florería | General Pacheco (Tigre) | Pedido con carrito + Test recomendador | [decoflor/](https://webbyoctavio.github.io/muestras/decoflor/) |
+| EAMUT - Escuela de Artes Musicales de Tigre | Escuela de música | General Pacheco (Tigre) | Test recomendador + Grilla de clases | [eamut-musica/](https://webbyoctavio.github.io/muestras/eamut-musica/) |
+| Estudio Glams | Escuela de danza y artes | El Talar (Tigre) | Grilla de clases + Cotizador | [estudio-glams/](https://webbyoctavio.github.io/muestras/estudio-glams/) |
+| El massa | Panadería y café | General Pacheco (Tigre) | Pedido con carrito + Calculadora | [el-massa/](https://webbyoctavio.github.io/muestras/el-massa/) |
+| Nails Lay | Salón de uñas | Don Torcuato (Tigre) | Turnos con agenda + Cotizador | [nails-lay/](https://webbyoctavio.github.io/muestras/nails-lay/) |
+| Caritto_studio | Estética y uñas | Don Torcuato (Tigre) | Test recomendador + Turnos con agenda | [caritto-studio/](https://webbyoctavio.github.io/muestras/caritto-studio/) |
+| Torcuato English Center | Instituto de inglés | Don Torcuato (Tigre) | Test recomendador + Grilla de clases | [torcuato-english/](https://webbyoctavio.github.io/muestras/torcuato-english/) |
+| Colchones Amalfi | Colchonería | Don Torcuato (Tigre) | Test recomendador + Cotizador | [colchones-amalfi/](https://webbyoctavio.github.io/muestras/colchones-amalfi/) |
+| MisDelicias Finas | Bombones artesanales | Don Torcuato (Tigre) | Configurador visual + Calculadora | [misdelicias-bombones/](https://webbyoctavio.github.io/muestras/misdelicias-bombones/) |
+| Fiambrería La Isla | Fiambrería y quesería | Benavídez (Tigre) | Calculadora + Test recomendador | [fiambreria-la-isla/](https://webbyoctavio.github.io/muestras/fiambreria-la-isla/) |
+| Delta Heat Hot Yoga | Hot yoga | Benavídez (Tigre) | Grilla de clases + Calculadora | [delta-heat-yoga/](https://webbyoctavio.github.io/muestras/delta-heat-yoga/) |
+| Ferretería y Sanitarios Chopper | Ferretería y sanitarios | Benavídez (Tigre) | Diagnóstico guiado + Calculadora | [ferreteria-chopper/](https://webbyoctavio.github.io/muestras/ferreteria-chopper/) |
+| Casi Cusi Catering | Catering | Tigre (Tigre) | Cotizador + Pedido con carrito | [casi-cusi-catering/](https://webbyoctavio.github.io/muestras/casi-cusi-catering/) |
+| Clases de guitarra y ukelele - Nacho Rocca | Clases de guitarra y ukelele | El Talar (Tigre) | Configurador visual + Turnos con agenda | [nacho-rocca-guitarra/](https://webbyoctavio.github.io/muestras/nacho-rocca-guitarra/) |
+| Dulces Pekes Pasteleria | Pastelería y café | Ingeniero Maschwitz (Escobar) | Configurador visual + Pedido con carrito | [dulces-pekes/](https://webbyoctavio.github.io/muestras/dulces-pekes/) |
+| Zotami | Plantas, café y mercado | Ingeniero Maschwitz (Escobar) | Test recomendador + Calculadora | [zotami-plantas/](https://webbyoctavio.github.io/muestras/zotami-plantas/) |
+| Verdu Vivero | Verdulería y vivero | Ingeniero Maschwitz (Escobar) | Pedido con carrito + Calculadora | [verdu-vivero/](https://webbyoctavio.github.io/muestras/verdu-vivero/) |
+| Veterinaria Upendi | Veterinaria | Ingeniero Maschwitz (Escobar) | Diagnóstico guiado + Calculadora | [veterinaria-upendi/](https://webbyoctavio.github.io/muestras/veterinaria-upendi/) |
+| KÄNARA | Bistró y jardín | Ingeniero Maschwitz (Escobar) | Turnos con agenda + Test recomendador | [kanara-bistro/](https://webbyoctavio.github.io/muestras/kanara-bistro/) |
+| QQ - Quinoa Queen | Cocina 100 % sin TACC | Ingeniero Maschwitz (Escobar) | Configurador visual + Pedido con carrito | [quinoa-queen/](https://webbyoctavio.github.io/muestras/quinoa-queen/) |
+| Schaeffer Bier | Cervecería artesanal | Garín (Escobar) | Test recomendador + Calculadora | [schaeffer-bier/](https://webbyoctavio.github.io/muestras/schaeffer-bier/) |
+| PDF Design Muebles a Medida | Muebles a medida | Garín (Escobar) | Configurador visual + Cotizador | [pdf-design-muebles/](https://webbyoctavio.github.io/muestras/pdf-design-muebles/) |
+| Mueblería Trinidad | Mueblería | Garín (Escobar) | Calculadora + Test recomendador | [muebleria-trinidad/](https://webbyoctavio.github.io/muestras/muebleria-trinidad/) |
+| Carpintería Muzylo aluminio y PVC | Aberturas de aluminio y PVC | Garín (Escobar) | Configurador visual + Diagnóstico guiado | [muzylo-aberturas/](https://webbyoctavio.github.io/muestras/muzylo-aberturas/) |
+| Kung Fu Shaolin Garín | Escuela de kung fu | Garín (Escobar) | Grilla de clases + Test recomendador | [kung-fu-shaolin-garin/](https://webbyoctavio.github.io/muestras/kung-fu-shaolin-garin/) |
+| PLANETA BOX | Box de entrenamiento funcional | Garín (Escobar) | Grilla de clases + Calculadora | [planeta-box/](https://webbyoctavio.github.io/muestras/planeta-box/) |
+| FLETES y Mini Mudanzas | Fletes y mini mudanzas | Garín (Escobar) | Cotizador + Calculadora | [fletes-garin/](https://webbyoctavio.github.io/muestras/fletes-garin/) |
+| Gomería La Palanca | Gomería | Del Viso (Pilar) | Diagnóstico guiado + Calculadora | [gomeria-la-palanca/](https://webbyoctavio.github.io/muestras/gomeria-la-palanca/) |
+| Lava autos GAYTÁN II | Lavadero de autos | Villa Rosa (Pilar) | Cotizador + Antes y después | [lavautos-gaytan/](https://webbyoctavio.github.io/muestras/lavautos-gaytan/) |
+| FLIKITI | Salón de fiestas infantiles | Del Viso (Pilar) | Cotizador + Turnos con agenda | [flikiti/](https://webbyoctavio.github.io/muestras/flikiti/) |
+| Mon temps | Salón de eventos | Manuel Alberti (Pilar) | Cotizador + Calculadora | [mon-temps/](https://webbyoctavio.github.io/muestras/mon-temps/) |
+| Dance Factory | Escuela de danza | San Miguel (San Miguel) | Grilla de clases + Test recomendador | [dance-factory/](https://webbyoctavio.github.io/muestras/dance-factory/) |
+| Bambalinas Arte | Escuela de artes escénicas | Bella Vista (San Miguel) | Test recomendador + Grilla de clases | [bambalinas-arte/](https://webbyoctavio.github.io/muestras/bambalinas-arte/) |
+| Bella Vista Tango Club | Escuela de tango y milonga | San Miguel (San Miguel) | Configurador visual + Grilla de clases | [bella-vista-tango/](https://webbyoctavio.github.io/muestras/bella-vista-tango/) |
+| Coty Manía Cotillón & Repostería | Cotillón y repostería | San Miguel (San Miguel) | Pedido con carrito + Calculadora | [coty-mania/](https://webbyoctavio.github.io/muestras/coty-mania/) |
+| Librería Las Gemelas | Librería escolar y comercial | Muñiz (San Miguel) | Pedido con carrito + Cotizador | [libreria-las-gemelas/](https://webbyoctavio.github.io/muestras/libreria-las-gemelas/) |
+| Autoescuela Centro de manejo | Autoescuela | San Miguel (San Miguel) | Test recomendador + Cotizador | [autoescuela-centro/](https://webbyoctavio.github.io/muestras/autoescuela-centro/) |
+| Tienda Melocotona | Regalería y bazar | Bella Vista (San Miguel) | Test recomendador + Cotizador | [tienda-melocotona/](https://webbyoctavio.github.io/muestras/tienda-melocotona/) |
+| Heladería Guito | Heladería artesanal | Bella Vista (San Miguel) | Configurador visual + Calculadora | [heladeria-guito/](https://webbyoctavio.github.io/muestras/heladeria-guito/) |
+| Rotisería Brief | Rotisería | Tortuguitas (Malvinas Argentinas) | Pedido con carrito + Test recomendador | [rotiseria-brief/](https://webbyoctavio.github.io/muestras/rotiseria-brief/) |
+| Pizzería Gabo | Pizzería | Tortuguitas (Malvinas Argentinas) | Configurador visual + Calculadora | [pizzeria-gabo/](https://webbyoctavio.github.io/muestras/pizzeria-gabo/) |
+| Taller Mecánico Los Polvorines | Taller mecánico | Los Polvorines (Malvinas Argentinas) | Diagnóstico guiado + Calculadora | [taller-los-polvorines/](https://webbyoctavio.github.io/muestras/taller-los-polvorines/) |
+| CGL motos | Repuestos y taller de motos | Los Polvorines (Malvinas Argentinas) | Pedido con carrito + Diagnóstico guiado | [cgl-motos/](https://webbyoctavio.github.io/muestras/cgl-motos/) |
+| San Miguel Gas Motor | Taller de GNC | Los Polvorines (Malvinas Argentinas) | Calculadora + Cotizador | [san-miguel-gas-motor/](https://webbyoctavio.github.io/muestras/san-miguel-gas-motor/) |
+| Parrilla El Camionero | Parrilla | Grand Bourg (Malvinas Argentinas) | Calculadora + Pedido con carrito | [parrilla-el-camionero/](https://webbyoctavio.github.io/muestras/parrilla-el-camionero/) |
+| Cocina Juan | Bodegón y parrilla | Grand Bourg (Malvinas Argentinas) | Grilla de clases + Pedido con carrito | [cocina-juan/](https://webbyoctavio.github.io/muestras/cocina-juan/) |
+| Sushi Gong Delivery | Sushi delivery | José C. Paz (José C. Paz) | Pedido con carrito + Calculadora | [sushi-gong/](https://webbyoctavio.github.io/muestras/sushi-gong/) |
+| Doble Filo Barbería | Barbería | Munro (Vicente López) | Turnos con agenda + Test recomendador | [doble-filo-barberia/](https://webbyoctavio.github.io/muestras/doble-filo-barberia/) |
+| Cerrajero Luzivan | Cerrajería | Munro (Vicente López) | Diagnóstico guiado + Cotizador | [cerrajero-luzivan/](https://webbyoctavio.github.io/muestras/cerrajero-luzivan/) |
+| Tapicería Atípica | Tapicería | Carapachay (Vicente López) | Configurador visual + Antes y después | [tapiceria-atipica/](https://webbyoctavio.github.io/muestras/tapiceria-atipica/) |
+| JV Telefonia Celular | Reparación de celulares | Villa Martelli (Vicente López) | Cotizador + Turnos con agenda | [jv-telefonia/](https://webbyoctavio.github.io/muestras/jv-telefonia/) |
+| Los Calcos Gráfica | Gráfica y calcos | Munro (Vicente López) | Configurador visual + Calculadora | [los-calcos-grafica/](https://webbyoctavio.github.io/muestras/los-calcos-grafica/) |
+| Relojería París | Relojería | Munro (Vicente López) | Diagnóstico guiado + Cotizador | [relojeria-paris/](https://webbyoctavio.github.io/muestras/relojeria-paris/) |
+| Mercería Nayade | Mercería y lanas | Villa Adelina (San Isidro) | Calculadora + Pedido con carrito | [merceria-nayade/](https://webbyoctavio.github.io/muestras/merceria-nayade/) |
+| Water dog | Peluquería canina | Villa Adelina (San Isidro) | Turnos con agenda + Calculadora | [water-dog/](https://webbyoctavio.github.io/muestras/water-dog/) |
+| PC Tech - Reparación y Mantenimiento de Computadoras | Servicio técnico de PC | Villa Adelina (San Isidro) | Diagnóstico guiado + Cotizador | [pc-tech/](https://webbyoctavio.github.io/muestras/pc-tech/) |
+| El Gato Gordo Petshop | Pet shop y peluquería | Boulogne (San Isidro) | Calculadora + Pedido con carrito | [el-gato-gordo-petshop/](https://webbyoctavio.github.io/muestras/el-gato-gordo-petshop/) |
+| Fran's Burgers | Hamburguesería | Beccar (San Isidro) | Configurador visual + Pedido con carrito | [frans-burgers/](https://webbyoctavio.github.io/muestras/frans-burgers/) |
+
 ## Capital Federal (gastronomía)
 
 50 muestras para parrillas, bodegones, pizzerías, cafés, panaderías y otros locales de la Ciudad de Buenos Aires.
