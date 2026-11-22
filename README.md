@@ -365,3 +365,4 @@ Ninguno tiene sitio web cargado en Google Maps y ninguno es cadena.
 | Dolce Herencia | Cafetería y almuerzos | Villa Pueyrredón | [dolce-herencia/](https://webbyoctavio.github.io/muestras/dolce-herencia/) |
 | Gardems | Pizzería y rotisería | Villa Pueyrredón | [gardems/](https://webbyoctavio.github.io/muestras/gardems/) |
 | Panadería Pinamar | Panadería y confitería | Villa Santa Rita | [panaderia-pinamar/](https://webbyoctavio.github.io/muestras/panaderia-pinamar/) |
+
