@@ -303,6 +303,28 @@ Ninguna repite negocios de las tandas anteriores. La barra de aviso y el pie dic
 | KeyStore | Cerrajería | Munro (Vicente López) | [keystore-munro/](https://webbyoctavio.github.io/muestras/keystore-munro/) |
 | Cerrajería MO | Cerrajería | Olivos (Vicente López) | [cerrajeria-mo-urgencias/](https://webbyoctavio.github.io/muestras/cerrajeria-mo-urgencias/) |
 
+## Zona norte V: previsualizaciones numeradas (noviembre 2026)
+
+Previsualizaciones de cómo sería la web terminada de negocios no gastronómicos de zona norte sin sitio web propio.
+Se suman en tandas de 5, en carpetas numeradas (`01-…`, `02-…`). Ninguna repite negocios de las tandas anteriores.
+La barra de aviso y el pie dicen que son muestras hechas por Nexora Webs.
+
+- Dirección, teléfono, horarios, puntaje y cantidad de reseñas salen de la ficha pública de Google Maps de cada negocio
+  (noviembre 2026). Buscando el nombre en la web no apareció sitio propio (sí Instagram o Facebook en algunos casos);
+  antes de escribirles conviene confirmar en la ficha de Maps que no tengan cargado un botón "Sitio web".
+- Las reseñas se muestran como resúmenes en español, no como citas textuales. Los servicios salen de lo que cuentan
+  las reseñas cuando se pudo; el resto de los textos son de ejemplo.
+- Cada muestra tiene paleta, dos fuentes de Google Fonts y logo en SVG propios, y una herramienta que arma el mensaje de WhatsApp.
+- Fotos de Unsplash. `img/og/` tiene la imagen que muestra WhatsApp al compartir cada link. Todas las páginas llevan `noindex`.
+
+| # | Negocio | Rubro | Localidad | Herramienta | Muestra |
+|---|---|---|---|---|---|
+| 01 | El Rincón · Pilates Estudio | Pilates | Martínez (San Isidro) | Armá tu semana con los turnos reales | [01-el-rincon-pilates-martinez/](https://webbyoctavio.github.io/muestras/01-el-rincon-pilates-martinez/) |
+| 02 | Herreras Auto Maniac Shine | Chapa, pintura y pulido | Don Torcuato (Tigre) | Marcá el daño sobre un auto en SVG | [02-maniac-shine-don-torcuato/](https://webbyoctavio.github.io/muestras/02-maniac-shine-don-torcuato/) |
+| 03 | Kynethos | Kinesiología y RPG | Munro (Vicente López) | Mapa del dolor + turnos según horario | [03-kynethos-kinesiologia-munro/](https://webbyoctavio.github.io/muestras/03-kynethos-kinesiologia-munro/) |
+| 04 | Fumigaciones Claudio | Fumigación y control de plagas | Tigre (Tigre) | Identificá la plaga + pedido de visita | [04-fumigaciones-claudio-tigre/](https://webbyoctavio.github.io/muestras/04-fumigaciones-claudio-tigre/) |
+| 05 | Veterinaria Beccar | Veterinaria | Beccar (San Isidro) | Turnero con los próximos días hábiles | [05-veterinaria-beccar/](https://webbyoctavio.github.io/muestras/05-veterinaria-beccar/) |
+
 ## Capital Federal (gastronomía)
 
 50 muestras para parrillas, bodegones, pizzerías, cafés, panaderías y otros locales de la Ciudad de Buenos Aires.
